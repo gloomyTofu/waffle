@@ -91,9 +91,15 @@ $include-html-global-classes: $include-html-classes;
 // $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
+$font-family-waffle: 'Quicksand', sans-serif;
+$font-family-waffle-title: 'Corben', cursive; 
+
 // We use these to define default font weights
 // $font-weight-normal: normal !default;
 // $font-weight-bold: bold !default;
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;
 
 // $white       : #FFFFFF;
 // $ghost       : #FAFAFA;
@@ -111,7 +117,7 @@ $include-html-global-classes: $include-html-classes;
 // $steel       : #666666;
 // $charcoal    : #555555;
 // $tuatara     : #444444;
-// $oil         : #333333;
+   $oil         : #333333;
 // $jet         : #222222;
 // $black       : #000000;
 
@@ -123,12 +129,22 @@ $include-html-global-classes: $include-html-classes;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
 
+$primary-color: #814F78;
+$secondary-color: #e7e7e7;
+$alert-color: #A6D1B5;
+$success-color: #fa694b;
+$warning-color: #F9F8E0;
+$info-color: #E2CBB2;
+
 // We use these to control various global styles
 // $body-bg: $white;
 // $body-font-color: $jet;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
+
+$body-font-color: $oil;
+$body-font-family: $font-family-waffle;
 
 // We use this to control font-smoothing
 // $font-smoothing: antialiased;
@@ -203,6 +219,10 @@ $include-html-global-classes: $include-html-classes;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
 // $header-text-rendering: optimizeLegibility;
+
+$header-font-family: $font-family-waffle-title;
+$header-font-weight: $font-weight-normal;
+$header-font-style: $font-weight-bold;
 
 // We use these to control header font sizes
 // $h1-font-size: rem-calc(44);
