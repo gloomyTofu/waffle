@@ -40,11 +40,33 @@
 //   "foundation/components/visibility";
 
 $uppercase-text-transform:uppercase;
+$waffle-menu-icon-color:$jet;
 
 .main-section {
-    padding:3rem 0; 
+    padding:2.5rem 0; 
 }
 .main-section h1 {
     font-weight: $font-weight-normal;
     margin-bottom:1rem;
+    margin-left: 1rem;
+}
+
+nav .svgIcon {
+    width:40px;
+    height:45px;
+    margin:0.25rem;
+    fill:$waffle-menu-icon-color;
+}
+
+nav .svgIcon:hover {
+    fill:$steel;
+}
+
+.title .svgIcon {
+    width:30px;
+    height:25px;
+    fill:$primary-color;
+}
+h1 a:hover, h1 a:focus, .title .svgIcon:hover {
+    fill:$steel;
 }

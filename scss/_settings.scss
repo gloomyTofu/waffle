@@ -101,7 +101,7 @@ $font-family-waffle-title: 'Corben', cursive;
 $font-weight-normal: 400;
 $font-weight-bold: 700;
 
-// $white       : #FFFFFF;
+   $white       : #FFFFFF;
 // $ghost       : #FAFAFA;
 // $snow        : #F9F9F9;
 // $vapor       : #F6F6F6;
@@ -109,17 +109,17 @@ $font-weight-bold: 700;
 // $silver      : #EFEFEF;
 // $smoke       : #EEEEEE;
 // $gainsboro   : #DDDDDD;
-// $iron        : #CCCCCC;
-// $base        : #AAAAAA;
-// $aluminum    : #999999;
+   $iron        : #CCCCCC;
+   $base        : #AAAAAA;
+   $aluminum    : #999999;
 // $jumbo       : #888888;
 // $monsoon     : #777777;
-// $steel       : #666666;
+   $steel       : #666666;
 // $charcoal    : #555555;
 // $tuatara     : #444444;
    $oil         : #333333;
 // $jet         : #222222;
-// $black       : #000000;
+   $black       : #000000;
 
 // We use these as default colors throughout
 // $primary-color: #008CBA;
@@ -129,12 +129,21 @@ $font-weight-bold: 700;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
 
-$primary-color: #814F78;
-$secondary-color: #e7e7e7;
-$alert-color: #A6D1B5;
-$success-color: #fa694b;
-$warning-color: #F9F8E0;
-$info-color: #E2CBB2;
+// Waffle Colors
+// $primary-color: #814F78;
+// $secondary-color: #e7e7e7;
+// $alert-color: #A6D1B5;
+// $success-color: #fa694b;
+// $warning-color: #F9F8E0;
+// $info-color: #E2CBB2;
+
+// Wireframe Colors
+$primary-color: $black;
+$secondary-color: $oil;
+$alert-color: $steel;
+$success-color: $aluminum;
+$warning-color: $iron;
+$info-color: $base;
 
 // We use these to control various global styles
 // $body-bg: $white;
@@ -832,6 +841,9 @@ $h1-font-reduction: rem-calc(15) !default;
 // $tabbar-color: $white;
 // $tabbar-middle-padding: 0 rem-calc(10);
 
+$tabbar-bg:transparent;
+$tabbar-color: $oil;
+
 // Off Canvas Divider Styles
 // $tabbar-right-section-border: solid 1px scale-color($tabbar-bg, $lightness: 13%);
 // $tabbar-left-section-border: solid 1px scale-color($tabbar-bg, $lightness: -50%);
@@ -890,6 +902,8 @@ $h1-font-reduction: rem-calc(15) !default;
 // $off-canvas-overlay-background-hover: rgba($white, 0.05);
 
 $off-canvas-overlay-box-shadow: none;
+$off-canvas-overlay-background: rgba($white, 0.4);
+$off-canvas-overlay-background-hover: rgba($white, 0.1);
 
 // Transition Variables
 // $menu-slide: "transform 500ms ease";
@@ -1388,6 +1402,8 @@ $off-canvas-overlay-box-shadow: none;
 // Background color for the top bar
 // $topbar-bg-color: $oil;
 // $topbar-bg: $topbar-bg-color;
+
+$topbar-bg:transparent;
 
 // Height and margin
 // $topbar-height: 45px;
