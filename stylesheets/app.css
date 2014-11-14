@@ -7612,7 +7612,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 
 /* line 269, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h1 {
-  font-size: 2.8125rem;
+  font-size: 2.5rem;
 }
 
 /* line 270, ../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -7862,7 +7862,7 @@ blockquote p {
 
   /* line 456, ../bower_components/foundation/scss/foundation/components/_type.scss */
   h1 {
-    font-size: 3.75rem;
+    font-size: 3.125rem;
   }
 
   /* line 457, ../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -9059,7 +9059,7 @@ th.hide-for-touch {
 }
 /* line 45, ../scss/app.scss */
 .main-section {
-  padding: 2.5rem 0;
+  padding: 1rem 0;
 }
 
 /* line 48, ../scss/app.scss */
@@ -9078,7 +9078,7 @@ nav .svgIcon {
 }
 
 /* line 61, ../scss/app.scss */
-nav .svgIcon:hover {
+nav .svgIcon:hover, .title .svgIcon:hover {
   fill: #666666;
 }
 
@@ -9090,6 +9090,6 @@ nav .svgIcon:hover {
 }
 
 /* line 70, ../scss/app.scss */
-h1 a:hover, h1 a:focus, .title .svgIcon:hover {
-  fill: #666666;
+h1 a:hover, h1 a:focus {
+  color: #666666;
 }

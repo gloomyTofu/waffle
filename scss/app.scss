@@ -43,7 +43,7 @@ $uppercase-text-transform:uppercase;
 $waffle-menu-icon-color:$jet;
 
 .main-section {
-    padding:2.5rem 0; 
+    padding:1rem 0; 
 }
 .main-section h1 {
     font-weight: $font-weight-normal;
@@ -58,7 +58,7 @@ nav .svgIcon {
     fill:$waffle-menu-icon-color;
 }
 
-nav .svgIcon:hover {
+nav .svgIcon:hover, .title .svgIcon:hover {
     fill:$steel;
 }
 
@@ -67,6 +67,6 @@ nav .svgIcon:hover {
     height:25px;
     fill:$primary-color;
 }
-h1 a:hover, h1 a:focus, .title .svgIcon:hover {
-    fill:$steel;
+h1 a:hover, h1 a:focus {
+    color:$steel;
 }

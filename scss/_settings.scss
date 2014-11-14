@@ -240,7 +240,7 @@ $header-font-weight: $font-weight-bold;
 // $h5-font-size: rem-calc(18);
 // $h6-font-size: 1rem;
 
-$h1-font-size: rem-calc(60);
+$h1-font-size: rem-calc(50);
 
 // We use these to control header size reduction on small screens
 // $h1-font-reduction: rem-calc(10) !default;
@@ -250,7 +250,7 @@ $h1-font-size: rem-calc(60);
 // $h5-font-reduction: 0 !default;
 // $h6-font-reduction: 0 !default;
 
-$h1-font-reduction: rem-calc(15) !default;
+$h1-font-reduction: rem-calc(10) !default;
 
 // These control how subheaders are styled.
 // $subheader-line-height: 1.4;
