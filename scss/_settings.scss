@@ -240,7 +240,7 @@ $header-font-weight: $font-weight-bold;
 // $h5-font-size: rem-calc(18);
 // $h6-font-size: 1rem;
 
-$h1-font-size: rem-calc(50);
+$h1-font-size: rem-calc(54);
 
 // We use these to control header size reduction on small screens
 // $h1-font-reduction: rem-calc(10) !default;
@@ -841,7 +841,7 @@ $h1-font-reduction: rem-calc(10) !default;
 // $tabbar-color: $white;
 // $tabbar-middle-padding: 0 rem-calc(10);
 
-$tabbar-bg:transparent;
+$tabbar-bg:rgba(0, 0, 0, 0);
 $tabbar-color: $oil;
 
 // Off Canvas Divider Styles
