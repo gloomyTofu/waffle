@@ -1,4 +1,6 @@
+<?php include 'header.php'; ?>
 
+<div class="main-section">
     <section class="main-content" id="directory">    
         <div class="row">
             <div class="small-6 medium-3 columns">
@@ -23,3 +25,6 @@
             </div>
         </div>
     </section>
+</div><!--end of main-section-->
+
+<?php include 'footer.php'; ?>

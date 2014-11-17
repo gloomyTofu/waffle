@@ -21,18 +21,18 @@
                         <a class="item left-off-canvas-toggle" title="menu" href="#">
                             <svg class="svgIcon" viewBox="0 0 30 25"><use xlink:href="images/svgicons.svg#menu"></use></svg>
                         </a>
-                        <a class="item pageLink" title="home" href="index.html">
+                        <a class="item pageLink" title="home" href="index.php">
                             <svg class="svgIcon" viewBox="-1 1 30 25"><use xlink:href="images/svgicons.svg#home"></use></svg>
                         </a>
-                        <a class="item pageLink" title="directory" href="directory.html">
+                        <a class="item pageLink" title="directory" href="directory.php">
                             <svg class="svgIcon" viewBox="0 0 30 25"><use xlink:href="images/svgicons.svg#leaderboard"></use></svg>
                         </a>
                     </section>
                     <section class="right" role="navigation"> 
-                        <a class="item pageLink" title="gallery" href="gallery.html">
+                        <a class="item pageLink" title="gallery" href="gallery.php">
                             <svg class="svgIcon" viewBox="0 0 30 25"><use xlink:href="images/svgicons.svg#gallery"></use></svg>
                         </a>
-                        <a class="item pageLink" title="book" href="book.html">
+                        <a class="item pageLink" title="book" href="book.php">
                             <svg class="svgIcon" viewBox="0 0 30 25"><use xlink:href="images/svgicons.svg#book"></use></svg>
                         </a>
                         
@@ -82,32 +82,3 @@
                     <li><a href="#">Settings</a></li>
                   </ul>
                 </aside>
-               
-               <div class="main-section">
-                    <section class="main-content" id="home">
-                        <div class="row">
-                            <div class="small-10 medium-7 small-centered columns">
-                                <section class="text-center">
-                                    <svg viewBox="5 0 192 198">
-                                        <use xlink:href="images/wafflesvg.svg#waffle-svg"></use>
-                                    </svg>
-                                    <h1 class="title">
-                                        <a class="pageLink" title="directory" href="directory.html"> waffle style <svg class="svgIcon" viewBox="0 0 30 25"><use xlink:href="images/svgicons.svg#right-arrow"></use></svg>
-                                        </a>
-                                    </h1>
-                                </section>
-                            </div>   
-                        </div>
-                   </section>
-               </div><!--end of main-section-->
-
-               <a class="exit-off-canvas"></a>
-            </div>
-        </div>
-        
-        <script src="bower_components/foundation/js/foundation.min.js"></script>
-        <script>
-            $(document).foundation();
-        </script>
-    </body>
-</html>
