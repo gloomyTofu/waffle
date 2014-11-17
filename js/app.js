@@ -1,49 +1,39 @@
 $(document).ready(function(){
-    homePage();
+
 });
                   
 $(function(){
-  //Adjust Resize Height of Window
-  $('.main-section').css({ height: $(window).innerHeight() });
-  $(window).resize(function(){
+    //Adjust Resize Height of Window
     $('.main-section').css({ height: $(window).innerHeight() });
-  });
+    $(window).resize(function(){
+        $('.main-section').css({ height: $(window).innerHeight() });
+    });
     
-  if(Modernizr.history){
-        $('a.pageLink').click(function(){
-            event.preventDefault();
-            var url = $(this).attr('data-file');
-            if (url.length) {
+    var newHash = "",
+        $mainSection = $(".main-section"),
+        $mainContent = $(".main-content"),
+        $el;
+    
+    if(Modernizr.history){
+
+        $("a.pageLink").click(function() {
+            url = $(this).attr('href');
+            title = $(this).attr('title');
+            if (url.length){
                 history.pushState(null, null, url);
-                changePage(url);
+                loadContent(url,title);
+                 return false;
             }
         });
     }
+    
+    function loadContent(href,id){
+        $mainSection.load(href + ' .main-content', function(){
+            $mainSection.fadeIn(500, function() {
+                $mainContent.animate({
+                   opacity:1
+                }, 500);
+            });
+        });
+    };
 });
-
-function changePage(url){
-	$('.main-section')
-        .animate({
-            opacity:0,
-        }, 500, function(){
-		// Check for home page
-
-		// load content
-		$('.main-content').load(url, function(){
-			$('.main-section').delay(50).animate({
-                opacity:1
-            }, 500);
-		});
-        
-        if (fileName == 'home.html?v=1'){
-			$('.main-section').addClass('home');
-		} else {
-			$('.main-section').removeClass('home');
-		}
-	});
-}
-
-function homePage(){
-    $('.main-section').addClass('home');
-    $('.main-content').load('content/home.html?v=1');
-}

@@ -7,7 +7,9 @@
         <title>Waffle Style</title>
         <link rel="stylesheet" href="stylesheets/app.css" />
         <link href='http://fonts.googleapis.com/css?family=Corben:400,700|Quicksand' rel='stylesheet' type='text/css'>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/modernizr/modernizr.js"></script>
+        <script src="js/app.js"></script>
     </head>
     <body>    
    
@@ -16,22 +18,25 @@
            <div class="inner-wrap">
                 <nav class="tab-bar top-bar" data-topbar role="navigation" data-options="sticky_on: small">
                     <section class="left" role="navigation">
-                        <a class="item left-off-canvas-toggle" href="#">
+                        <a class="item left-off-canvas-toggle" title="menu" href="#">
                             <svg class="svgIcon" viewBox="0 0 30 25"><use xlink:href="images/svgicons.svg#menu"></use></svg>
                         </a>
-                        <a class="item pageLink" data-file="directory.html?v=1">
+                        <a class="item pageLink" title="home" href="index.html">
+                            <svg class="svgIcon" viewBox="-1 1 30 25"><use xlink:href="images/svgicons.svg#home"></use></svg>
+                        </a>
+                        <a class="item pageLink" title="directory" href="directory.html">
                             <svg class="svgIcon" viewBox="0 0 30 25"><use xlink:href="images/svgicons.svg#leaderboard"></use></svg>
                         </a>
-                        <a class="item pageLink" data-file="gallery.html?v=1">
+                    </section>
+                    <section class="right" role="navigation"> 
+                        <a class="item pageLink" title="gallery" href="gallery.html">
                             <svg class="svgIcon" viewBox="0 0 30 25"><use xlink:href="images/svgicons.svg#gallery"></use></svg>
                         </a>
-                    </section>
-                    <section class="right" role="navigation">                    
-                        <a class="item pageLink" data-file="book.html?v=1">
+                        <a class="item pageLink" title="book" href="book.html">
                             <svg class="svgIcon" viewBox="0 0 30 25"><use xlink:href="images/svgicons.svg#book"></use></svg>
                         </a>
                         
-                        <a class="item right-off-canvas-toggle" href="#">
+                        <a class="item right-off-canvas-toggle" title="account" href="#">
                             <svg class="svgIcon" viewBox="0 0 30 25"><use xlink:href="images/svgicons.svg#account"></use></svg>
                         </a>
                     </section>
@@ -78,19 +83,29 @@
                   </ul>
                 </aside>
                
-               <div class="main-section home">
-                    <section class="main-content">
+               <div class="main-section">
+                    <section class="main-content" id="home">
+                        <div class="row">
+                            <div class="small-10 medium-7 small-centered columns">
+                                <section class="text-center">
+                                    <svg viewBox="5 0 192 198">
+                                        <use xlink:href="images/wafflesvg.svg#waffle-svg"></use>
+                                    </svg>
+                                    <h1 class="title">
+                                        <a class="pageLink" title="directory" href="directory.html"> waffle style <svg class="svgIcon" viewBox="0 0 30 25"><use xlink:href="images/svgicons.svg#right-arrow"></use></svg>
+                                        </a>
+                                    </h1>
+                                </section>
+                            </div>   
+                        </div>
                    </section>
-               </div>
+               </div><!--end of main-section-->
 
                <a class="exit-off-canvas"></a>
             </div>
         </div>
-
-        <script src="bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="bower_components/foundation/js/foundation.min.js"></script>
-        <script src="js/app.js"></script>
         
+        <script src="bower_components/foundation/js/foundation.min.js"></script>
         <script>
             $(document).foundation();
         </script>
