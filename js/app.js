@@ -1,31 +1,45 @@
 $(document).ready(function(){
-    //homePage();
-
-	$('a.pageLink').on('click', function(){
-		changePage($(this).attr('data-file'));
-	});
+    homePage();
 });
                   
 $(function(){
+  //Adjust Resize Height of Window
   $('.main-section').css({ height: $(window).innerHeight() });
   $(window).resize(function(){
     $('.main-section').css({ height: $(window).innerHeight() });
   });
+    
+  if(Modernizr.history){
+        $('a.pageLink').click(function(){
+            event.preventDefault();
+            var url = $(this).attr('data-file');
+            if (url.length) {
+                history.pushState(null, null, url);
+                changePage(url);
+            }
+        });
+    }
 });
 
-function changePage(fileName){
-	$('.main-section').animate({opacity:0}, 500, function(){
+function changePage(url){
+	$('.main-section')
+        .animate({
+            opacity:0,
+        }, 500, function(){
 		// Check for home page
-		if (fileName == 'home.html?v=1'){
-			$('.main-section').addClass('home');
-		}else{
-			$('.main-section').removeClass('home');
-		}
 
 		// load content
-		$('.main-content').load('content/'+fileName, function(){
-			$('.main-section').delay(50).animate({opacity:1}, 500);
+		$('.main-content').load(url, function(){
+			$('.main-section').delay(50).animate({
+                opacity:1
+            }, 500);
 		});
+        
+        if (fileName == 'home.html?v=1'){
+			$('.main-section').addClass('home');
+		} else {
+			$('.main-section').removeClass('home');
+		}
 	});
 }
 
