@@ -41,15 +41,49 @@
 
 $uppercase-text-transform:uppercase;
 $waffle-menu-icon-color:$jet;
+$waffle-grey:#dcdcdc;
+$waffle-light-grey:#efefef;
+$font-weight-light: 300;
+
+p.smallTxt {font-size:90%; }
+a.text-link {text-decoration:underline; }
+span.waffle {text-transform:uppercase; font-family:$font-family-waffle; letter-spacing: 0.15em; }
 
 .main-section {
-    padding:1.5rem 0; 
+    padding:2.25rem 0;
+    margin:0 1em;
 }
 .main-section h1 {
     font-weight: $font-weight-normal;
     margin-bottom:1rem;
     margin-left: 1rem;
 }
+h1 a:hover, h1 a:focus {
+    color:$steel;
+}
+
+.alert-box.footer-bottom {
+    background: rgba(247, 247, 247, 0.7);
+    position: fixed;
+    width: 105%;
+    left: -1em;
+    bottom: 0;
+    font-size: 2em;
+    text-align: right;
+    color:#333;
+    border:none;
+    font-weight:300;
+    margin:0;
+}
+
+.alert-box.footer-bottom .title {padding-right:0.05em; }
+.alert-box.footer-bottom .title span {font-size:50%; }
+
+
+/* SVG */
+svg.placeholder {background:$waffle-light-grey; width:100%; }
+svg.placeholder-circle {fill:$waffle-light-grey; }
+svg.placeholder-circle, svg.placeholder line {stroke:$waffle-grey; stroke-width:1; }
 
 nav .svgIcon {
     width:40px;
@@ -57,7 +91,6 @@ nav .svgIcon {
     margin:0.25rem;
     fill:$waffle-menu-icon-color;
 }
-
 nav .svgIcon:hover, .title .svgIcon:hover {
     fill:$steel;
 }
@@ -67,6 +100,48 @@ nav .svgIcon:hover, .title .svgIcon:hover {
     height:25px;
     fill:$primary-color;
 }
-h1 a:hover, h1 a:focus {
-    color:$steel;
+
+.left-off-canvas-menu ul.off-canvas-list li a {
+    padding-bottom: 0.75em; 
+    font-weight:$font-weight-light; 
+    color: rgba(255, 255, 255, 0.75);
+ }
+.item .menu-icon {
+    width:20px;
+    height:20px;
+    margin-right:5px;
+    position:relative;
+    top:5px;
 }
+
+svg.svgMini {
+    fill:$steel;
+}
+
+svg.svgMini:hover {
+    fill:$waffle-grey;
+}
+
+
+/* REVEAL MODAL */
+.reveal-modal {padding:0; }
+.singleModal svg {height:25em; }
+.singleModal .buttons-row {padding:0 1em;}
+
+/* REVEAL MODAL - TABS */
+.reveal-modal ul.tabs {background-color: $waffle-light-grey; }
+.reveal-modal .tabs-content {padding:2em; }
+
+
+/* GALLERY */
+#gallery ul {line-height:0; }
+li .gallery-frame {border:1px solid $waffle-grey; }
+.gallery-frame .buttons-row .columns {padding:0; border-right:1px solid $waffle-grey; height:2.5em; }
+.gallery-frame .buttons-row .columns.last {border:none; }
+.gallery-frame .item .menu-icon {width:100%; }
+#gallery svg.svgMini {width:30px; height:25px; margin-right:8px; }
+#gallery p {font-size:90%; }
+#gallery p, #gallery svg.svgMini {margin-top:0.5em; }
+#gallery svg.icon_heart.svgMini {fill:$white; stroke:$steel; stroke-width:2; }
+#gallery svg.icon_heart.svgMini:hover {fill:$waffle-grey; stroke:$waffle-grey; }
+#gallery svg.icon_more.svgMini {margin-right:0; width:100%; }

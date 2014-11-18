@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="small-10 medium-7 small-centered columns">
                     <section class="text-center">
-                        <svg viewBox="5 0 192 198">
+                        <svg viewBox="4 0 198 198">
                             <use xlink:href="images/wafflesvg.svg#waffle-svg"></use>
                         </svg>
                         <h1 class="title">

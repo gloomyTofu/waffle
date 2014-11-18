@@ -7616,7 +7616,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 
 /* line 269, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h1 {
-  font-size: 2.75rem;
+  font-size: 2.625rem;
 }
 
 /* line 270, ../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -7866,7 +7866,7 @@ blockquote p {
 
   /* line 456, ../bower_components/foundation/scss/foundation/components/_type.scss */
   h1 {
-    font-size: 3.375rem;
+    font-size: 3.25rem;
   }
 
   /* line 457, ../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -9062,19 +9062,85 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
-/* line 45, ../scss/app.scss */
-.main-section {
-  padding: 1.5rem 0;
+/* line 48, ../scss/app.scss */
+p.smallTxt {
+  font-size: 90%;
 }
 
-/* line 48, ../scss/app.scss */
+/* line 49, ../scss/app.scss */
+a.text-link {
+  text-decoration: underline;
+}
+
+/* line 50, ../scss/app.scss */
+span.waffle {
+  text-transform: uppercase;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 0.15em;
+}
+
+/* line 52, ../scss/app.scss */
+.main-section {
+  padding: 2.25rem 0;
+  margin: 0 1em;
+}
+
+/* line 56, ../scss/app.scss */
 .main-section h1 {
   font-weight: 400;
   margin-bottom: 1rem;
   margin-left: 1rem;
 }
 
-/* line 54, ../scss/app.scss */
+/* line 61, ../scss/app.scss */
+h1 a:hover, h1 a:focus {
+  color: #666666;
+}
+
+/* line 65, ../scss/app.scss */
+.alert-box.footer-bottom {
+  background: rgba(247, 247, 247, 0.7);
+  position: fixed;
+  width: 105%;
+  left: -1em;
+  bottom: 0;
+  font-size: 2em;
+  text-align: right;
+  color: #333;
+  border: none;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* line 79, ../scss/app.scss */
+.alert-box.footer-bottom .title {
+  padding-right: 0.05em;
+}
+
+/* line 80, ../scss/app.scss */
+.alert-box.footer-bottom .title span {
+  font-size: 50%;
+}
+
+/* SVG */
+/* line 84, ../scss/app.scss */
+svg.placeholder {
+  background: #efefef;
+  width: 100%;
+}
+
+/* line 85, ../scss/app.scss */
+svg.placeholder-circle {
+  fill: #efefef;
+}
+
+/* line 86, ../scss/app.scss */
+svg.placeholder-circle, svg.placeholder line {
+  stroke: gainsboro;
+  stroke-width: 1;
+}
+
+/* line 88, ../scss/app.scss */
 nav .svgIcon {
   width: 40px;
   height: 45px;
@@ -9082,19 +9148,131 @@ nav .svgIcon {
   fill: #222222;
 }
 
-/* line 61, ../scss/app.scss */
+/* line 94, ../scss/app.scss */
 nav .svgIcon:hover, .title .svgIcon:hover {
   fill: #666666;
 }
 
-/* line 65, ../scss/app.scss */
+/* line 98, ../scss/app.scss */
 .title .svgIcon {
   width: 30px;
   height: 25px;
   fill: black;
 }
 
-/* line 70, ../scss/app.scss */
-h1 a:hover, h1 a:focus {
-  color: #666666;
+/* line 104, ../scss/app.scss */
+.left-off-canvas-menu ul.off-canvas-list li a {
+  padding-bottom: 0.75em;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* line 109, ../scss/app.scss */
+.item .menu-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  position: relative;
+  top: 5px;
+}
+
+/* line 117, ../scss/app.scss */
+svg.svgMini {
+  fill: #666666;
+}
+
+/* line 121, ../scss/app.scss */
+svg.svgMini:hover {
+  fill: gainsboro;
+}
+
+/* REVEAL MODAL */
+/* line 127, ../scss/app.scss */
+.reveal-modal, dialog {
+  padding: 0;
+}
+
+/* line 128, ../scss/app.scss */
+.singleModal svg {
+  height: 25em;
+}
+
+/* line 129, ../scss/app.scss */
+.singleModal .buttons-row {
+  padding: 0 1em;
+}
+
+/* REVEAL MODAL - TABS */
+/* line 132, ../scss/app.scss */
+.reveal-modal ul.tabs, dialog ul.tabs {
+  background-color: #efefef;
+}
+
+/* line 133, ../scss/app.scss */
+.reveal-modal .tabs-content, dialog .tabs-content {
+  padding: 2em;
+}
+
+/* GALLERY */
+/* line 137, ../scss/app.scss */
+#gallery ul {
+  line-height: 0;
+}
+
+/* line 138, ../scss/app.scss */
+li .gallery-frame {
+  border: 1px solid gainsboro;
+}
+
+/* line 139, ../scss/app.scss */
+.gallery-frame .buttons-row .columns {
+  padding: 0;
+  border-right: 1px solid gainsboro;
+  height: 2.5em;
+}
+
+/* line 140, ../scss/app.scss */
+.gallery-frame .buttons-row .columns.last {
+  border: none;
+}
+
+/* line 141, ../scss/app.scss */
+.gallery-frame .item .menu-icon {
+  width: 100%;
+}
+
+/* line 142, ../scss/app.scss */
+#gallery svg.svgMini {
+  width: 30px;
+  height: 25px;
+  margin-right: 8px;
+}
+
+/* line 143, ../scss/app.scss */
+#gallery p {
+  font-size: 90%;
+}
+
+/* line 144, ../scss/app.scss */
+#gallery p, #gallery svg.svgMini {
+  margin-top: 0.5em;
+}
+
+/* line 145, ../scss/app.scss */
+#gallery svg.icon_heart.svgMini {
+  fill: white;
+  stroke: #666666;
+  stroke-width: 2;
+}
+
+/* line 146, ../scss/app.scss */
+#gallery svg.icon_heart.svgMini:hover {
+  fill: gainsboro;
+  stroke: gainsboro;
+}
+
+/* line 147, ../scss/app.scss */
+#gallery svg.icon_more.svgMini {
+  margin-right: 0;
+  width: 100%;
 }
