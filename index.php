@@ -9,7 +9,7 @@
                             <use xlink:href="images/wafflesvg.svg#waffle-svg"></use>
                         </svg>
                         <h1 class="title">
-                            <a class="pageLink" title="directory" href="directory.php"> waffle style <svg class="svgIcon" viewBox="0 0 30 25"><use xlink:href="images/svgicons.svg#right-arrow"></use></svg>
+                            <a class="pageLink" title="directory" href="directory.php?v=1"> waffle style <svg class="svgIcon" viewBox="0 0 30 25"><use xlink:href="images/svgicons.svg#right-arrow"></use></svg>
                             </a>
                         </h1>
                     </section>

@@ -1,17 +1,13 @@
 $(document).ready(function(){
-
+    //Image Placeholder    
+    $('svg.placeholder').html('<line x1="0" y1 ="0" x2="100%" y2="100%"/><line x1="0" y1="100%" x2="100%" y2="0"/>');
 });
                   
 $(function(){
     //Adjust Resize Height of Window
-    $('.main-section').css({ height: $(window).innerHeight() });
+    $('.main-content').css({ height: $(window).innerHeight() });
     $(window).resize(function(){
-        $('.main-section').css({ height: $(window).innerHeight() });
-    });
-    
-    $('.modal-popup').on('click',function(){
-        var modalName = $(this).attr('data-reveal-id');
-        $('.reveal-modal').attr('id', modalName);
+        $('.main-content').css({ height: $(window).innerHeight() });
     });
     
     var newHash = "",
@@ -40,8 +36,8 @@ $(function(){
         });
     };
     
-    //Image Placeholders
-    $('svg.placeholder-circle').html('<circle cx="50" cy="50" r="40">');
-    
-    $('svg.placeholder').html('<line x1="0" y1 ="0" x2="100%" y2="100%"/><line x1="0" y1="100%" x2="100%" y2="0"/>');
+    $('.modal-popup').on('click',function(){
+        var modalName = $(this).attr('data-reveal-id');
+        $('.reveal-modal').attr('id', modalName);
+    });
 });

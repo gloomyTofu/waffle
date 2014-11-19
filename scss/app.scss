@@ -45,9 +45,46 @@ $waffle-grey:#dcdcdc;
 $waffle-light-grey:#efefef;
 $font-weight-light: 300;
 
+//Touch Scrolling <http://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/>
+.touch { -webkit-overflow-scrolling: touch; }
+
 p.smallTxt {font-size:90%; }
 a.text-link {text-decoration:underline; }
 span.waffle {text-transform:uppercase; font-family:$font-family-waffle; letter-spacing: 0.15em; }
+
+
+/* MARGINS & PADDING */
+.row .columns h2.no-margin {margin-bottom:0; }
+
+.row .no-padding {padding:0; }
+.row .padding-top {padding-top:1rem; }
+
+
+/* BORDER */
+.row.border-bottom {border-bottom:1px solid $waffle-grey; margin-bottom:2rem; }
+
+
+/* NAV */
+.tab-bar .custom-menu-icon {
+    width: 2.75rem;
+    height: 2.75rem;
+    display: block;
+    padding: 0;
+    position: relative;
+    float:left;
+    margin:0.5rem;
+}
+
+
+/* OFF-CANVAS */
+.off-canvas-wrap, .inner-wrap {
+    min-height: 100%;
+}
+
+.off-canvas-wrap{  
+    height: 100%;
+    overflow-y: auto;
+}
 
 .main-section {
     padding:2.25rem 0;
@@ -65,8 +102,8 @@ h1 a:hover, h1 a:focus {
 .alert-box.footer-bottom {
     background: rgba(247, 247, 247, 0.7);
     position: fixed;
-    width: 105%;
-    left: -1em;
+    width: 100%;
+    left:0%;
     bottom: 0;
     font-size: 2em;
     text-align: right;
@@ -75,25 +112,16 @@ h1 a:hover, h1 a:focus {
     font-weight:300;
     margin:0;
 }
-
-.alert-box.footer-bottom .title {padding-right:0.05em; }
 .alert-box.footer-bottom .title span {font-size:50%; }
 
 
 /* SVG */
 svg.placeholder {background:$waffle-light-grey; width:100%; }
-svg.placeholder-circle {fill:$waffle-light-grey; }
+svg.placeholder-circle {fill:$waffle-light-grey; width:100%; }
 svg.placeholder-circle, svg.placeholder line {stroke:$waffle-grey; stroke-width:1; }
 
-nav .svgIcon {
-    width:40px;
-    height:45px;
-    margin:0.25rem;
-    fill:$waffle-menu-icon-color;
-}
-nav .svgIcon:hover, .title .svgIcon:hover {
-    fill:$steel;
-}
+nav .svgIcon {fill:$waffle-menu-icon-color; }
+nav .svgIcon:hover, .title .svgIcon:hover, nav .svgIcon:focus, .title .svgIcon:focus, nav .svgIcon:visited, .title .svgIcon:visited {fill:$steel; }
 
 .title .svgIcon {
     width:30px;
@@ -102,7 +130,7 @@ nav .svgIcon:hover, .title .svgIcon:hover {
 }
 
 .left-off-canvas-menu ul.off-canvas-list li a {
-    padding-bottom: 0.75em; 
+    padding-bottom: 0.75rem; 
     font-weight:$font-weight-light; 
     color: rgba(255, 255, 255, 0.75);
  }
@@ -122,26 +150,81 @@ svg.svgMini:hover {
     fill:$waffle-grey;
 }
 
+.profile-image {width:8rem; }
 
-/* REVEAL MODAL */
-.reveal-modal {padding:0; }
-.singleModal svg {height:25em; }
-.singleModal .buttons-row {padding:0 1em;}
-
-/* REVEAL MODAL - TABS */
-.reveal-modal ul.tabs {background-color: $waffle-light-grey; }
-.reveal-modal .tabs-content {padding:2em; }
+/* GLOBAL ICONS */
+.social-share-icon {
+    position:absolute;
+    top:5rem;
+    right:0.75rem;
+    width:2rem;
+    height:2rem;
+}
+.custom-button.share-button small {position:relative; top:-0.25rem; }
+a.custom-button.share-button:hover, a.custom-button.share-button:focus {color:$waffle-grey; }
 
 
 /* GALLERY */
+#gallery .small-12.columns, #galleryDetail .small-12.columns {padding:0; }
+#gallery ul.tabs {padding-bottom:1rem; }
+#gallery li.tab-title {width:33%; text-align:center; line-height:1.25rem; }
+#gallery li.tab-title > a {border:1px solid #dcdcdc; padding: 0.5rem 0; }
 #gallery ul {line-height:0; }
 li .gallery-frame {border:1px solid $waffle-grey; }
-.gallery-frame .buttons-row .columns {padding:0; border-right:1px solid $waffle-grey; height:2.5em; }
-.gallery-frame .buttons-row .columns.last {border:none; }
-.gallery-frame .item .menu-icon {width:100%; }
-#gallery svg.svgMini {width:30px; height:25px; margin-right:8px; }
-#gallery p {font-size:90%; }
-#gallery p, #gallery svg.svgMini {margin-top:0.5em; }
-#gallery svg.icon_heart.svgMini {fill:$white; stroke:$steel; stroke-width:2; }
-#gallery svg.icon_heart.svgMini:hover {fill:$waffle-grey; stroke:$waffle-grey; }
-#gallery svg.icon_more.svgMini {margin-right:0; width:100%; }
+#gallery .buttons-row .columns {border-right:1px solid $waffle-grey; height:2.5rem; }
+#gallery .buttons-row .columns.last {border:none; }
+
+#gallery p {font-size:85%; }
+#gallery p, #gallery svg.svgMini {margin-top:0.5rem; }
+
+
+/* GALLERY/REVEAL MODAL - ICONS */
+.buttons-row .columns {padding:0; }
+.buttons-row .item .menu-icon {width:100%; }
+.buttons-row svg.svgMini {width:30px; height:25px; margin-right:8px; }
+.singleModal .buttons-row .columns {border-left:1px solid $waffle-grey; height:4rem; }
+.singleModal .buttons-row .columns.last {border:none; }
+.singleModal .buttons-row .user-title {margin-top:1em; }
+svg.icon_heart.svgMini, svg.icon_comment.svgMini {fill:$white; stroke:$steel; stroke-width:2; }
+svg.icon_heart.svgMini:hover, svg.icon_comment.svgMini:hover {fill:$waffle-grey; stroke:$waffle-grey; }
+
+.share-button svg.svgMini {margin-right:0; width:100%; }
+
+.summary-icons {display:inline; }
+.summary-icons svg.svgMini {fill:$waffle-grey; stroke:$waffle-grey;}
+.summary-icons svg.svgMini {width:20px; height:20px; margin-left:2px; }
+
+
+/* REVEAL MODAL */
+.reveal-modal {padding:0; }
+.singleModal svg {height:25rem; }
+.singleModal .buttons-row {padding:0 1rem;}
+.singleModal .buttons-row .user-title {position:absolute; top:1rem;}
+.singleModal .buttons-row svg.svgMini {height:26px; }
+
+/* REVEAL MODAL - TABS */
+.reveal-modal ul.tabs {background-color: $waffle-light-grey; }
+.reveal-modal .tabs-content {padding:3.5rem 1rem 1.5rem; }
+.reveal-modal ul.circle-icon-list {margin:0; }
+.reveal-modal ul.circle-icon-list li {list-style:none; clear:both; padding-right:0.5rem; }
+
+/* REVEAL MODAL - LEADERBOARD & ACHIEVEMENT */
+svg.placeholder-circle.left {
+    width: 115px;
+    height: 100px;
+}
+.circle-icon-list a span {
+    position:relative;
+    top:2.12rem;
+}
+.user-ranking {padding:2rem; }
+
+// Medium (tablet) Sizes and Up
+@media only screen and (min-width: 40.063em) {
+    
+    /* BORDERS */
+    .columns.border-right {
+        border-right:1px solid $waffle-grey; 
+    }
+    .columns.border-right.last {border-right:none; padding-left:2.5rem; }
+}
