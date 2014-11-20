@@ -1,10 +1,10 @@
-<?php include 'header.php'; ?>
+<?php include 'content/header.php'; ?>
 
 <div class="main-section">
     <section class="main-content" id="directory">    
-        <ul class="small-block-grid-2 medium-block-grid-4 text-center">
+        <ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-6 text-center">
             <li>
-                <a href="#">
+                <a href="#" data-reveal-id="waffleDetail">
                     <svg viewBox="0 0 200 200">
                         <use xlink:href="images/wafflesvg.svg#waffle-svg"></use>
                     </svg>
@@ -12,7 +12,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#" data-reveal-id="waffleDetail">
                     <svg viewBox="0 0 200 200">
                         <use xlink:href="images/wafflesvg.svg#waffle-svg"></use>
                     </svg>
@@ -20,7 +20,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#" data-reveal-id="waffleDetail">
                     <svg viewBox="0 0 200 200">
                         <use xlink:href="images/wafflesvg.svg#waffle-svg"></use>
                     </svg>
@@ -28,7 +28,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#" data-reveal-id="waffleDetail">
                     <svg viewBox="0 0 200 200">
                         <use xlink:href="images/wafflesvg.svg#waffle-svg"></use>
                     </svg>
@@ -36,7 +36,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#" data-reveal-id="waffleDetail">
                     <svg viewBox="0 0 200 200">
                         <use xlink:href="images/wafflesvg.svg#waffle-svg"></use>
                     </svg>
@@ -44,7 +44,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#" data-reveal-id="waffleDetail">
                     <svg viewBox="0 0 200 200">
                         <use xlink:href="images/wafflesvg.svg#waffle-svg"></use>
                     </svg>
@@ -52,7 +52,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#" data-reveal-id="waffleDetail">
                     <svg viewBox="0 0 200 200">
                         <use xlink:href="images/wafflesvg.svg#waffle-svg"></use>
                     </svg>
@@ -60,7 +60,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#" data-reveal-id="waffleDetail">
                     <svg viewBox="0 0 200 200">
                         <use xlink:href="images/wafflesvg.svg#waffle-svg"></use>
                     </svg>
@@ -68,7 +68,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#" data-reveal-id="waffleDetail">
                     <svg viewBox="0 0 200 200">
                         <use xlink:href="images/wafflesvg.svg#waffle-svg"></use>
                     </svg>
@@ -76,7 +76,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#" data-reveal-id="waffleDetail">
                     <svg viewBox="0 0 200 200">
                         <use xlink:href="images/wafflesvg.svg#waffle-svg"></use>
                     </svg>
@@ -84,7 +84,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#" data-reveal-id="waffleDetail">
                     <svg viewBox="0 0 200 200">
                         <use xlink:href="images/wafflesvg.svg#waffle-svg"></use>
                     </svg>
@@ -92,7 +92,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#" data-reveal-id="waffleDetail">
                     <svg viewBox="0 0 200 200">
                         <use xlink:href="images/wafflesvg.svg#waffle-svg"></use>
                     </svg>
@@ -100,6 +100,40 @@
                 </a>
             </li>
         </ul>
+        
+        <!-- Waffle Detail Modal -->
+        <div id="waffleDetail" class="reveal-modal" data-reveal>
+            <div class="singleModal">
+                <div class="row">
+                    <div class="small-12 small-centered text-center columns">
+                        <h2 class="text-lowercase"><span class="waffle">American Waffle</span></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="medium-5 large-4 columns small-text-center medium-text-right">
+                        <svg width="200" height="200">
+                            <use xlink:href="images/wafflesvg.svg#waffle-svg"></use>
+                        </svg>
+                    </div>
+                    <div class="small-12 small-centered medium-7 medium-uncentered columns small-text-center medium-text-left">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel ligula vehicula, volutpat tortor fermentum, feugiat est.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-12 medium-10 small-centered columns text-center no-padding">
+                        <ul class="button-group">
+                            <li><a href="american-waffle.php?v=1" role="button" class="pageLink button">More Info</a></li>
+                            <li><a href="#" role="button" class="button">Recipe</a></li>
+                            <li><a href="#" role="button" class="button">Play Game</a></li>
+                            <li><a href="#" role="button" class="button">Decorate</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+          <a class="close-reveal-modal">&#215;</a>
+        </div>
         
         <div data-alert class="alert-box footer-bottom">
             <div class="row">
@@ -114,4 +148,4 @@
     </section>
 </div><!--end of main-section-->
 
-<?php include 'footer.php'; ?>
+<?php include 'content/footer.php'; ?>

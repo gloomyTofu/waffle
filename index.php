@@ -1,9 +1,9 @@
-<?php include 'header.php'; ?>
+<?php include 'content/header.php'; ?>
                
    <div class="main-section">
         <section class="main-content" id="home">
             <div class="row">
-                <div class="small-10 medium-7 small-centered columns">
+                <div class="small-12 medium-7 small-centered columns">
                     <section class="text-center">
                         <svg viewBox="4 0 198 198">
                             <use xlink:href="images/wafflesvg.svg#waffle-svg"></use>
@@ -18,4 +18,4 @@
        </section>
    </div><!--end of main-section-->
 
-<?php include 'footer.php'; ?>
+<?php include 'content/footer.php'; ?>

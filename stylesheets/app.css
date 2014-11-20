@@ -8002,7 +8002,6 @@ blockquote p {
 }
 /* line 288, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 .off-canvas-wrap {
-  -webkit-backface-visibility: hidden;
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -8015,7 +8014,6 @@ blockquote p {
 
 /* line 289, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 .inner-wrap {
-  -webkit-backface-visibility: hidden;
   position: relative;
   width: 100%;
   -webkit-transition: -webkit-transform 500ms ease;
@@ -8036,7 +8034,6 @@ blockquote p {
 
 /* line 291, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 .tab-bar {
-  -webkit-backface-visibility: hidden;
   background: rgba(0, 0, 0, 0);
   color: #333333;
   height: 2.8125rem;
@@ -8135,7 +8132,6 @@ blockquote p {
 
 /* line 324, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 .left-off-canvas-menu {
-  -webkit-backface-visibility: hidden;
   width: 15.625rem;
   top: 0;
   bottom: 0;
@@ -8156,14 +8152,9 @@ blockquote p {
   transform: translate3d(-100.5%, 0, 0);
   left: 0;
 }
-/* line 105, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
-.left-off-canvas-menu * {
-  -webkit-backface-visibility: hidden;
-}
 
 /* line 325, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 .right-off-canvas-menu {
-  -webkit-backface-visibility: hidden;
   width: 15.625rem;
   top: 0;
   bottom: 0;
@@ -8183,10 +8174,6 @@ blockquote p {
   -o-transform: translate3d(100.5%, 0, 0);
   transform: translate3d(100.5%, 0, 0);
   right: 0;
-}
-/* line 105, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
-.right-off-canvas-menu * {
-  -webkit-backface-visibility: hidden;
 }
 
 /* line 327, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
@@ -8232,7 +8219,6 @@ ul.off-canvas-list li a:hover {
 }
 /* line 336, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 .move-right .exit-off-canvas {
-  -webkit-backface-visibility: hidden;
   transition: background 300ms ease;
   cursor: pointer;
   box-shadow: none;
@@ -8264,7 +8250,6 @@ ul.off-canvas-list li a:hover {
 }
 /* line 344, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 .move-left .exit-off-canvas {
-  -webkit-backface-visibility: hidden;
   transition: background 300ms ease;
   cursor: pointer;
   box-shadow: none;
@@ -8296,7 +8281,6 @@ ul.off-canvas-list li a:hover {
 }
 /* line 355, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 .offcanvas-overlap .exit-off-canvas {
-  -webkit-backface-visibility: hidden;
   transition: background 300ms ease;
   cursor: pointer;
   box-shadow: none;
@@ -8328,7 +8312,6 @@ ul.off-canvas-list li a:hover {
 }
 /* line 366, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 .offcanvas-overlap-left .exit-off-canvas {
-  -webkit-backface-visibility: hidden;
   transition: background 300ms ease;
   cursor: pointer;
   box-shadow: none;
@@ -8360,7 +8343,6 @@ ul.off-canvas-list li a:hover {
 }
 /* line 377, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 .offcanvas-overlap-right .exit-off-canvas {
-  -webkit-backface-visibility: hidden;
   transition: background 300ms ease;
   cursor: pointer;
   box-shadow: none;
@@ -8400,7 +8382,6 @@ ul.off-canvas-list li a:hover {
 
 /* line 484, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 .left-submenu {
-  -webkit-backface-visibility: hidden;
   width: 15.625rem;
   top: 0;
   bottom: 0;
@@ -8424,10 +8405,6 @@ ul.off-canvas-list li a:hover {
   -ms-transition: -ms-transform 500ms ease;
   -o-transition: -o-transform 500ms ease;
   transition: transform 500ms ease;
-}
-/* line 397, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
-.left-submenu * {
-  -webkit-backface-visibility: hidden;
 }
 /* line 424, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 .left-submenu .back > a {
@@ -8464,7 +8441,6 @@ ul.off-canvas-list li a:hover {
 
 /* line 491, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 .right-submenu {
-  -webkit-backface-visibility: hidden;
   width: 15.625rem;
   top: 0;
   bottom: 0;
@@ -8488,10 +8464,6 @@ ul.off-canvas-list li a:hover {
   -ms-transition: -ms-transform 500ms ease;
   -o-transition: -o-transform 500ms ease;
   transition: transform 500ms ease;
-}
-/* line 397, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
-.right-submenu * {
-  -webkit-backface-visibility: hidden;
 }
 /* line 424, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
 .right-submenu .back > a {
@@ -9068,62 +9040,104 @@ th.hide-for-touch {
 }
 
 /* line 50, ../scss/app.scss */
-a.pageLink, .modal-popup, .custom-menu-icon {
+a svg, a.button, a.pageLink, .modal-popup, .custom-menu-icon, h3.recipe-tab, a.tooltip-box {
   cursor: pointer;
 }
 
 /* line 52, ../scss/app.scss */
+a.button:hover, a.button:focus, a.button:active {
+  background: #666666;
+}
+
+/* line 53, ../scss/app.scss */
 p.smallTxt {
   font-size: 90%;
 }
 
-/* line 53, ../scss/app.scss */
+/* line 54, ../scss/app.scss */
 a.text-link {
   text-decoration: underline;
 }
 
-/* line 54, ../scss/app.scss */
+/* line 55, ../scss/app.scss */
 span.waffle {
   text-transform: uppercase;
   font-family: "Quicksand", sans-serif;
   letter-spacing: 0.15em;
 }
 
-/* POSTION */
 /* line 57, ../scss/app.scss */
+ul.list-style-position-inside li {
+  list-style-position: inside;
+}
+
+/* TEXT */
+/* line 60, ../scss/app.scss */
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+
+/* line 61, ../scss/app.scss */
+.small-text-center {
+  text-align: center !important;
+}
+
+/* POSITION */
+/* line 64, ../scss/app.scss */
 .fixed-bottom {
-  position: fixed;
-  bottom: 0;
+  position: fixed !important;
+  bottom: 0 !important;
 }
 
 /* MARGINS & PADDING */
-/* line 60, ../scss/app.scss */
-.row .columns h2.no-margin {
-  margin-bottom: 0;
+/* line 67, ../scss/app.scss */
+h2.no-margin {
+  margin-bottom: 0 !important;
 }
 
-/* line 62, ../scss/app.scss */
-.row .no-padding {
-  padding: 0;
+/* line 69, ../scss/app.scss */
+.no-padding {
+  padding: 0 !important;
 }
 
-/* line 63, ../scss/app.scss */
-.row .padding-top {
-  padding-top: 1rem;
+/* line 70, ../scss/app.scss */
+.no-padding-right {
+  padding-right: 0 !important;
+}
+
+/* line 71, ../scss/app.scss */
+.no-padding-left {
+  padding-left: 0 !important;
+}
+
+/* line 72, ../scss/app.scss */
+.padding-top {
+  padding-top: 1rem !important;
+}
+
+/* line 73, ../scss/app.scss */
+.padding-left {
+  padding-left: 1rem !important;
 }
 
 /* BORDER */
-/* line 67, ../scss/app.scss */
-.row.border-bottom {
-  border-bottom: 1px solid gainsboro;
-  margin-bottom: 2rem;
+/* line 76, ../scss/app.scss */
+.border-bottom {
+  border-bottom: 1px solid gainsboro !important;
+  margin-bottom: 2rem !important;
+}
+
+/* DISPLAY */
+/* line 79, ../scss/app.scss */
+.row .display-inline {
+  display: inline !important;
 }
 
 /* NAV */
-/* line 71, ../scss/app.scss */
+/* line 83, ../scss/app.scss */
 .tab-bar .custom-menu-icon {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.25rem;
+  height: 2.25rem;
   display: block;
   padding: 0;
   position: relative;
@@ -9132,36 +9146,36 @@ span.waffle {
 }
 
 /* OFF-CANVAS */
-/* line 83, ../scss/app.scss */
+/* line 95, ../scss/app.scss */
 .off-canvas-wrap, .inner-wrap {
   min-height: 100%;
 }
 
-/* line 87, ../scss/app.scss */
+/* line 99, ../scss/app.scss */
 .off-canvas-wrap {
   height: 100%;
   overflow-y: auto;
 }
 
-/* line 92, ../scss/app.scss */
+/* line 104, ../scss/app.scss */
 .main-section {
-  padding: 2.25rem 0;
+  padding: 2.25rem 0 0;
   margin: 0 1em;
 }
 
-/* line 96, ../scss/app.scss */
+/* line 108, ../scss/app.scss */
 .main-section h1 {
   font-weight: 400;
   margin-bottom: 1rem;
   margin-left: 1rem;
 }
 
-/* line 101, ../scss/app.scss */
+/* line 113, ../scss/app.scss */
 h1 a:hover, h1 a:focus {
   color: #666666;
 }
 
-/* line 105, ../scss/app.scss */
+/* line 117, ../scss/app.scss */
 .alert-box.footer-bottom {
   background: rgba(247, 247, 247, 0.7);
   position: fixed;
@@ -9176,55 +9190,56 @@ h1 a:hover, h1 a:focus {
   margin: 0;
 }
 
-/* line 118, ../scss/app.scss */
+/* line 130, ../scss/app.scss */
 .alert-box.footer-bottom .title span {
   font-size: 50%;
 }
 
 /* SVG */
-/* line 122, ../scss/app.scss */
+/* line 134, ../scss/app.scss */
 svg.placeholder {
   background: #efefef;
   width: 100%;
 }
 
-/* line 123, ../scss/app.scss */
+/* line 135, ../scss/app.scss */
 svg.placeholder-circle {
   fill: #efefef;
   width: 100%;
 }
 
-/* line 124, ../scss/app.scss */
+/* line 136, ../scss/app.scss */
 svg.placeholder-circle, svg.placeholder line {
   stroke: gainsboro;
   stroke-width: 1;
 }
 
-/* line 126, ../scss/app.scss */
+/* line 138, ../scss/app.scss */
 nav .svgIcon {
   fill: #222222;
 }
 
-/* line 127, ../scss/app.scss */
-nav .svgIcon:hover, .title .svgIcon:hover, nav .svgIcon:focus, .title .svgIcon:focus, nav .svgIcon:visited, .title .svgIcon:visited {
+/* line 139, ../scss/app.scss */
+nav .svgIcon:hover, .title .svgIcon:hover, nav .svgIcon:focus, .title .svgIcon:focus, nav .svgIcon:active, .title .svgIcon:active {
   fill: #666666;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-/* line 129, ../scss/app.scss */
+/* line 141, ../scss/app.scss */
 .title .svgIcon {
   width: 30px;
   height: 25px;
   fill: black;
 }
 
-/* line 135, ../scss/app.scss */
+/* line 147, ../scss/app.scss */
 .left-off-canvas-menu ul.off-canvas-list li a {
   padding-bottom: 0.75rem;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.75);
 }
 
-/* line 140, ../scss/app.scss */
+/* line 152, ../scss/app.scss */
 .item .menu-icon {
   width: 20px;
   height: 20px;
@@ -9233,23 +9248,23 @@ nav .svgIcon:hover, .title .svgIcon:hover, nav .svgIcon:focus, .title .svgIcon:f
   top: 5px;
 }
 
-/* line 148, ../scss/app.scss */
+/* line 160, ../scss/app.scss */
 svg.svgMini {
   fill: #666666;
 }
 
-/* line 152, ../scss/app.scss */
-svg.svgMini:hover {
+/* line 164, ../scss/app.scss */
+svg.svgMini:hover, svg.svgMini:focus, svg.svgMini:active {
   fill: gainsboro;
 }
 
-/* line 156, ../scss/app.scss */
+/* line 168, ../scss/app.scss */
 .profile-image {
   width: 8rem;
 }
 
 /* GLOBAL ICONS */
-/* line 159, ../scss/app.scss */
+/* line 171, ../scss/app.scss */
 .social-share-icon {
   position: absolute;
   top: 5rem;
@@ -9258,225 +9273,480 @@ svg.svgMini:hover {
   height: 2rem;
 }
 
-/* line 166, ../scss/app.scss */
-.custom-button.share-button small {
+/* line 178, ../scss/app.scss */
+a.custom-button.share-button small {
   position: relative;
   top: -0.25rem;
 }
 
-/* line 167, ../scss/app.scss */
-a.custom-button.share-button:hover, a.custom-button.share-button:focus {
+/* line 179, ../scss/app.scss */
+a.custom-button.share-button:hover, a.custom-button.share-button:focus, a.custom-button.share-button:active {
   color: gainsboro;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 /* GALLERY */
-/* line 171, ../scss/app.scss */
+/* line 183, ../scss/app.scss */
 #gallery .small-12.columns, #galleryDetail .small-12.columns {
   padding: 0;
 }
 
-/* line 172, ../scss/app.scss */
+/* line 184, ../scss/app.scss */
 #gallery ul.tabs {
   padding-bottom: 1rem;
 }
 
-/* line 173, ../scss/app.scss */
+/* line 185, ../scss/app.scss */
 #gallery li.tab-title {
   width: 33%;
   text-align: center;
   line-height: 1.25rem;
 }
 
-/* line 174, ../scss/app.scss */
+/* line 186, ../scss/app.scss */
 #gallery li.tab-title > a {
   border: 1px solid #dcdcdc;
   padding: 0.5rem 0;
 }
 
-/* line 175, ../scss/app.scss */
+/* line 187, ../scss/app.scss */
 #gallery ul {
   line-height: 0;
 }
 
-/* line 176, ../scss/app.scss */
+/* line 188, ../scss/app.scss */
 li .gallery-frame {
   border: 1px solid gainsboro;
 }
 
-/* line 177, ../scss/app.scss */
+/* line 189, ../scss/app.scss */
 #gallery .buttons-row .columns {
   border-right: 1px solid gainsboro;
   height: 2.5rem;
 }
 
-/* line 178, ../scss/app.scss */
+/* line 190, ../scss/app.scss */
 #gallery .buttons-row .columns.last {
   border: none;
 }
 
-/* line 180, ../scss/app.scss */
+/* line 192, ../scss/app.scss */
 #gallery p {
-  font-size: 85%;
+  font-size: 80%;
 }
 
-/* line 181, ../scss/app.scss */
+/* line 193, ../scss/app.scss */
 #gallery p, #gallery svg.svgMini {
   margin-top: 0.5rem;
 }
 
 /* GALLERY/REVEAL MODAL - ICONS */
-/* line 185, ../scss/app.scss */
+/* line 197, ../scss/app.scss */
 .buttons-row .columns {
   padding: 0;
 }
 
-/* line 186, ../scss/app.scss */
+/* line 198, ../scss/app.scss */
 .buttons-row .item .menu-icon {
   width: 100%;
 }
 
-/* line 187, ../scss/app.scss */
+/* line 199, ../scss/app.scss */
 .buttons-row svg.svgMini {
   width: 30px;
   height: 25px;
   margin-right: 8px;
 }
 
-/* line 188, ../scss/app.scss */
+/* line 200, ../scss/app.scss */
 .singleModal .buttons-row .columns {
   border-left: 1px solid gainsboro;
 }
 
-/* line 189, ../scss/app.scss */
+/* line 201, ../scss/app.scss */
 .singleModal .buttons-row a {
   height: 4rem;
 }
 
-/* line 190, ../scss/app.scss */
+/* line 202, ../scss/app.scss */
 .singleModal .buttons-row .columns.last {
   border: none;
 }
 
-/* line 191, ../scss/app.scss */
+/* line 203, ../scss/app.scss */
 .singleModal .buttons-row .user-title {
   margin-top: 1em;
 }
 
-/* line 192, ../scss/app.scss */
+/* line 204, ../scss/app.scss */
 svg.icon_heart.svgMini, svg.icon_comment.svgMini {
   fill: white;
   stroke: #666666;
   stroke-width: 2;
 }
 
-/* line 193, ../scss/app.scss */
-svg.icon_heart.svgMini:hover, svg.icon_comment.svgMini:hover {
+/* line 205, ../scss/app.scss */
+svg.icon_heart.svgMini:hover, svg.icon_comment.svgMini:hover, svg.icon_comment.svgMini:active {
   fill: gainsboro;
   stroke: gainsboro;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-/* line 195, ../scss/app.scss */
+/* line 207, ../scss/app.scss */
 .share-button svg.svgMini {
   margin-right: 0;
   width: 100%;
 }
 
-/* line 197, ../scss/app.scss */
-.summary-icons {
-  display: inline;
-}
-
-/* line 198, ../scss/app.scss */
+/* line 208, ../scss/app.scss */
 .summary-icons svg.svgMini {
   fill: gainsboro;
   stroke: gainsboro;
 }
 
-/* line 199, ../scss/app.scss */
+/* line 209, ../scss/app.scss */
 .summary-icons svg.svgMini {
   width: 20px;
   height: 20px;
   margin-left: 2px;
+  position: relative;
+  top: 4px;
 }
 
 /* REVEAL MODAL */
-/* line 203, ../scss/app.scss */
+/* line 213, ../scss/app.scss */
 .reveal-modal, dialog {
   padding: 0;
 }
 
-/* line 204, ../scss/app.scss */
-.singleModal svg {
-  height: 25rem;
+/* line 214, ../scss/app.scss */
+.singleModal h2 {
+  margin: 3rem 0 2rem;
 }
 
-/* line 205, ../scss/app.scss */
+/* line 215, ../scss/app.scss */
 .singleModal .buttons-row {
   padding: 0 1rem;
 }
 
-/* line 206, ../scss/app.scss */
+/* line 216, ../scss/app.scss */
 .singleModal .buttons-row .user-title {
   position: absolute;
   top: 1rem;
 }
 
-/* line 207, ../scss/app.scss */
+/* line 217, ../scss/app.scss */
+.singleModal svg.placeholder {
+  height: 25rem;
+}
+
+/* line 218, ../scss/app.scss */
 .singleModal .buttons-row svg.svgMini {
   height: 26px;
 }
 
 /* REVEAL MODAL - TABS */
-/* line 210, ../scss/app.scss */
+/* line 221, ../scss/app.scss */
 .reveal-modal ul.tabs, dialog ul.tabs {
   background-color: #efefef;
 }
 
-/* line 211, ../scss/app.scss */
+/* line 222, ../scss/app.scss */
 .reveal-modal .tabs-content, dialog .tabs-content {
   padding: 3.5rem 1rem 1.5rem;
 }
 
-/* line 212, ../scss/app.scss */
+/* line 223, ../scss/app.scss */
 .reveal-modal ul.circle-icon-list, dialog ul.circle-icon-list {
   margin: 0;
 }
 
-/* line 213, ../scss/app.scss */
+/* line 224, ../scss/app.scss */
 .reveal-modal ul.circle-icon-list li, dialog ul.circle-icon-list li {
   list-style: none;
   clear: both;
   padding-right: 0.5rem;
 }
 
+/* line 225, ../scss/app.scss */
+ul.social-share-buttons li {
+  margin: 1rem 0.12rem;
+}
+
+/* line 226, ../scss/app.scss */
+ul.social-share-buttons {
+  margin-bottom: 5rem;
+}
+
+/* line 227, ../scss/app.scss */
+ul.social-share-buttons svg {
+  fill: #fff;
+}
+
+/* line 229, ../scss/app.scss */
+ul.social-share-buttons a.facebook {
+  background-color: #3B5998;
+}
+
+/* line 230, ../scss/app.scss */
+ul.social-share-buttons a.twitter {
+  background-color: #55ACEE;
+}
+
+/* line 231, ../scss/app.scss */
+ul.social-share-buttons a.email {
+  background-color: #fa694b;
+}
+
+/* line 233, ../scss/app.scss */
+ul.social-share-buttons a.facebook:hover, ul.social-share-buttons a.facebook:focus {
+  background-color: #294379;
+}
+
+/* line 234, ../scss/app.scss */
+ul.social-share-buttons a.twitter:hover, ul.social-share-buttons a.twitter:focus {
+  background-color: #388dce;
+}
+
+/* line 235, ../scss/app.scss */
+ul.social-share-buttons a.email:hover, ul.social-share-buttons a.email:focus {
+  background-color: #db5a3f;
+}
+
+/* WAFFLE DIRECTORY */
+/* line 238, ../scss/app.scss */
+#waffleDetail .button-group li {
+  margin: 0 0.25rem;
+}
+
+/* line 239, ../scss/app.scss */
+#waffleDetail li a.button {
+  width: 9.75rem;
+}
+
+/* line 240, ../scss/app.scss */
+#waffleDetail p {
+  padding: 0 1.5rem 1rem;
+}
+
+/* line 241, ../scss/app.scss */
+#waffleDetail svg {
+  margin-bottom: 1rem;
+}
+
+/* WAFFLE INFO */
+/* line 244, ../scss/app.scss */
+svg.waffle-detail-img {
+  width: 100%;
+  position: relative;
+}
+
+/* line 245, ../scss/app.scss */
+.waffle-detail.columns {
+  background-color: #efefef;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+/* line 246, ../scss/app.scss */
+.waffle-detail a.button {
+  width: 12rem;
+}
+
+/* line 248, ../scss/app.scss */
+a.tooltip-box {
+  position: absolute;
+}
+
+/* line 249, ../scss/app.scss */
+.tooltip-box .waffle-tooltip {
+  width: 35px;
+  height: 35px;
+}
+
+/* line 250, ../scss/app.scss */
+.tooltip-box.tip-a {
+  top: 11%;
+  left: 24%;
+}
+
+/* line 251, ../scss/app.scss */
+.tooltip-box.tip-b {
+  top: 49%;
+  right: 23%;
+}
+
+/* line 252, ../scss/app.scss */
+.tooltip-box.tip-c {
+  bottom: 10%;
+  left: 37%;
+}
+
+/* line 253, ../scss/app.scss */
+.has-tip, .has-tip:hover, .has-tip:focus {
+  border-bottom: 0;
+}
+
+/* line 255, ../scss/app.scss */
+.waffle-detail h3 {
+  margin-bottom: 1.5rem;
+}
+
+/* RECIPE SLIDER */
+/* line 258, ../scss/app.scss */
+.recipe-slider h3.recipe-tab {
+  padding: 1rem 1.5rem 0.75rem;
+  border: 1px solid #efefef;
+  border-bottom: 0;
+  background-color: #fff;
+  position: relative;
+  top: 0.57rem;
+  left: 1rem;
+  float: left;
+}
+
+/* line 268, ../scss/app.scss */
+.recipe-slider .row .columns {
+  font-size: 70%;
+}
+
+/* line 269, ../scss/app.scss */
+.recipe-slider .row .columns small {
+  font-size: 100%;
+}
+
+/* line 270, ../scss/app.scss */
+.recipe-slider .row {
+  border-bottom: 1px solid #efefef;
+}
+
+/* line 271, ../scss/app.scss */
+.recipe-content.row {
+  padding: 2.23rem 0 3rem 1.5rem;
+  background-color: #fff;
+  display: none;
+}
+
 /* REVEAL MODAL - LEADERBOARD & ACHIEVEMENT */
-/* line 216, ../scss/app.scss */
+/* line 274, ../scss/app.scss */
 svg.placeholder-circle.left {
   width: 115px;
   height: 100px;
 }
 
-/* line 220, ../scss/app.scss */
+/* line 278, ../scss/app.scss */
 .circle-icon-list a span {
   position: relative;
   top: 2.12rem;
 }
 
-/* line 224, ../scss/app.scss */
+/* line 282, ../scss/app.scss */
 .user-ranking {
   padding: 2rem;
 }
 
+@media only screen and (max-width: 25em) {
+  /* line 287, ../scss/app.scss */
+  .main-section {
+    padding: 1rem 0;
+  }
+
+  /* GALLERY */
+  /* line 290, ../scss/app.scss */
+  .gallery-frame svg.placeholder {
+    height: 10rem;
+  }
+
+  /* DIRECTORY */
+  /* line 293, ../scss/app.scss */
+  #directory [class*="block-grid-"] > li {
+    height: 13rem;
+  }
+
+  /* line 294, ../scss/app.scss */
+  #waffleDetail li a.button {
+    font-size: 90%;
+    margin-bottom: 0.75rem;
+  }
+
+  /* REVEAL MODAL */
+  /* line 297, ../scss/app.scss */
+  .tabs dd > a, .tabs .tab-title > a {
+    padding: 1rem 1rem;
+  }
+
+  /* line 298, ../scss/app.scss */
+  .user-ranking {
+    padding: 2rem 0 3rem 1rem;
+  }
+}
 @media only screen and (min-width: 40.063em) {
+  /* TEXT */
+  /* line 305, ../scss/app.scss */
+  .medium-text-right {
+    text-align: right !important;
+  }
+
+  /* line 306, ../scss/app.scss */
+  .medium-text-left {
+    text-align: left !important;
+  }
+
   /* BORDERS */
-  /* line 230, ../scss/app.scss */
+  /* line 309, ../scss/app.scss */
   .columns.border-right {
     border-right: 1px solid gainsboro;
   }
 
-  /* line 233, ../scss/app.scss */
+  /* line 312, ../scss/app.scss */
   .columns.border-right.last {
     border-right: none;
     padding-left: 2.5rem;
+  }
+
+  /* WAFFLE DIRECTORY */
+  /* line 315, ../scss/app.scss */
+  #waffleDetail .button-group li {
+    margin: 0 0.5rem;
+  }
+
+  /* line 316, ../scss/app.scss */
+  #waffleDetail svg {
+    margin-bottom: 2rem;
+  }
+
+  /* line 317, ../scss/app.scss */
+  #waffleDetail p {
+    padding: 1rem 0;
+    text-align: left;
+  }
+
+  /* line 318, ../scss/app.scss */
+  #waffleDetail li a.button {
+    width: 11rem;
+  }
+
+  /* line 319, ../scss/app.scss */
+  #waffleDetail .button-group {
+    margin-bottom: 2rem;
+  }
+
+  /* WAFFLE INFO */
+  /* line 322, ../scss/app.scss */
+  .waffle-detail a.button {
+    width: 100%;
+  }
+
+  /* REVEAL MODAL */
+  /* line 325, ../scss/app.scss */
+  ul.social-share-buttons li {
+    margin: 1rem 0.5rem;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 330, ../scss/app.scss */
+  .tooltip-box .waffle-tooltip {
+    width: 50px;
+    height: 50px;
   }
 }

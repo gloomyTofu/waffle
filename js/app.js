@@ -1,6 +1,12 @@
 $(document).ready(function(){
     //Image Placeholder    
     $('svg.placeholder').html('<line x1="0" y1 ="0" x2="100%" y2="100%"/><line x1="0" y1="100%" x2="100%" y2="0"/>');
+    
+    document.addEventListener("touchstart", function(){}, true);
+    
+    $('h3.recipe-tab').click(function(){
+       $('.recipe-content.row').slideToggle('slow'); 
+    });
 });
                   
 $(function(){
@@ -33,6 +39,11 @@ $(function(){
                    opacity:1
                 }, 500);
             });
+        });
+        $('.off-canvas-wrap').removeClass('move-right');
+        $('.reveal-modal-bg, .reveal-modal').fadeOut(2000, function(){
+            $('.reveal-modal-bg').hide();
+            $('.reveal-modal.open').remove();
         });
     };
 });

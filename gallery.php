@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'content/header.php'; ?>
 
 <div class="main-section">
     <section class="main-content" id="gallery">
@@ -498,9 +498,9 @@
                         <span class="waffle">Title of Artwork</span> by <a href="#" class="text-link">Some Guy</a>
                     </div>
                 </div>
-                <div class="row buttons-row">
+                <div class="row buttons-row no-padding-right">
                     <div class="small-6 columns last">
-                        <div class="summary-icons">
+                        <div class="summary-icons display-inline">
                             5,000 <svg class="icon_heart svgMini" viewBox="0 -8 36 36"><use xlink:href="images/mini-svg-icons.svg#icon_heart-solid"></use></svg> 
                             6 <svg class="icon_comment svgMini" viewBox="0 -7 34 34"><use xlink:href="images/mini-svg-icons.svg#icon_comment-solid"></use></svg>
                         </div>
@@ -541,4 +541,4 @@
 </div><!--end of main-section-->
 
 
-<?php include 'footer.php'; ?>
+<?php include 'content/footer.php'; ?>

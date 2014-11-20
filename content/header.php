@@ -47,66 +47,66 @@
                <aside class="left-off-canvas-menu">
                   <ul class="off-canvas-list">
                     <li><label>U.S.</label></li>
-                    <li><a class="item" href="#">
+                    <li><a class="pageLink item" href="american-waffle.php?v=1">
                         <svg class="menu-icon placeholder" viewBox="0 0 20 20">
                         </svg> American</a></li>
-                    <li><a class="item" href="#">
+                    <li><a class="pageLink item" href="american-waffle.php?v=1">
                         <svg class="menu-icon placeholder">
                             
                         </svg> Belgian</a></li>
 
                     <li><label>Belgium</label></li>
-                    <li><a class="item" href="#">
+                    <li><a class="pageLink item" href="american-waffle.php?v=1">
                         <svg class="menu-icon placeholder">
                             
                         </svg> Brussels</a></li>
-                    <li><a class="item" href="#">
+                    <li><a class="pageLink item" href="american-waffle.php?v=1">
                         <svg class="menu-icon placeholder">
                             
                         </svg> Liege</a></li>
                       
                     <li><label>The Nordic Region</label></li>
-                    <li><a class="item" href="#">
+                    <li><a class="pageLink item" href="american-waffle.php?v=1">
                         <svg class="menu-icon placeholder">
                             
                         </svg> Scandinavian Style</a></li>
 
                     <li><label>France</label></li>
-                    <li><a class="item" href="#">
+                    <li><a class="pageLink item" href="american-waffle.php?v=1">
                         <svg class="menu-icon placeholder">
                             
                         </svg> Flemish</a></li>
 
                     <li><label>Germany</label></li>
-                    <li><a class="item" href="#">
+                    <li><a class="pageLink item" href="american-waffle.php?v=1">
                         <svg class="menu-icon placeholder">
                             
                         </svg> Bergische</a></li>
 
                     <li><label>Netherlands</label></li>
-                    <li><a class="item" href="#">
+                    <li><a class="pageLink item" href="american-waffle.php?v=1">
                         <svg class="menu-icon placeholder">
                             
                         </svg> Stroopwafels</a></li>
 
                     <li><label>Japan</label></li>
-                    <li><a class="item" href="#">
+                    <li><a class="pageLink item" href="american-waffle.php?v=1">
                         <svg class="menu-icon placeholder">
                             
                         </svg> Taiyaki</a></li>
 
                     <li><label>Hong Kong</label></li>
-                    <li><a class="item" href="#">
+                    <li><a class="pageLink item" href="american-waffle.php?v=1">
                         <svg class="menu-icon placeholder">
                             
                         </svg> Eggette</a></li>
-                    <li><a class="item" href="#">
+                    <li><a class="pageLink item" href="american-waffle.php?v=1">
                         <svg class="menu-icon placeholder">
                             
                         </svg> Hong Kong Style</a></li>
 
                     <li><label>Vietnam</label></li>
-                    <li><a class="item" href="#">
+                    <li><a class="pageLink item" href="american-waffle.php?v=1">
                         <svg class="menu-icon placeholder">
                             
                         </svg> Pandan</a></li>
