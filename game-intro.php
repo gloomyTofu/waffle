@@ -1,12 +1,12 @@
 <!-- Game Start -->
-<div id="game-start">
+<div id="game-intro">
     <div class="singleModal">
         <div class="row">
             <div class="small-12 small-centered text-center columns">
                 <h2><span class="waffle">Step 1: Prep</span></h2>
             </div>
         </div>
-         <div class="row">
+         <div class="row padding-right padding-left">
             <div class="medium-5 large-4 columns small-text-center medium-text-right margin-bottom">
                 <svg class="placeholder" width="100" height="100">
                 </svg>
@@ -16,6 +16,9 @@
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel ligula vehicula, volutpat tortor fermentum, feugiat est.
                 </p>
+                <p>Proin quis molestie erat. Mauris tristique euismod nisi, id dignissim nisl maximus ac. Nunc sit amet nibh nisi. Nullam eget ligula libero.</p>
+                
+                <a href="game-play.php?v=1" role="button" class="pageLink button right margin-right">Start Game</a>
             </div>
         </div>
     </div>

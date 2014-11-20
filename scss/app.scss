@@ -55,7 +55,7 @@ p.smallTxt {font-size:90%; }
 a.text-link {text-decoration:underline; }
 span.waffle {text-transform:uppercase; font-family:$font-family-waffle; letter-spacing: 0.15em; }
 
-ul.list-style-position-inside li {list-style-position: inside; }
+ul.list-style-position-inside li {list-style-position:inside; }
 
 /* TEXT */
 .text-lowercase {text-transform:lowercase !important; }
@@ -67,12 +67,14 @@ ul.list-style-position-inside li {list-style-position: inside; }
 /* MARGINS & PADDING */
 h2.no-margin {margin-bottom:0 !important; }
 .margin-bottom {margin-bottom:1rem !important; }
+.margin-right {margin-right:1rem !important; }
 
 .no-padding {padding:0 !important; }
 .no-padding-right {padding-right:0 !important; }
 .no-padding-left {padding-left:0 !important;}
 .padding-top {padding-top:1rem !important; }
 .padding-left {padding-left:1rem !important;}
+.padding-right {padding-right:1rem !important;}
 
 /* BORDER */
 .border-bottom {border-bottom:1px solid $waffle-grey !important; margin-bottom:2rem !important; }

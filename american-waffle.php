@@ -23,7 +23,7 @@
             <div class="waffle-detail medium-4 large-3 large-offset-1 text-center columns">
                 <h3><span class="waffle">American Waffle</span></h3>
                 <div class="button-group">
-                    <a href="#" class="modal-popup button" data-reveal-id="game-start" data-reveal-ajax="game-start.php?v=1" title="Play Game" role="button">Play Game</a>
+                    <a href="#" class="modal-popup button" data-reveal-id="game-start" data-reveal-ajax="game-intro.php?v=1" title="Play Game" role="button">Play Game</a>
                     <a href="#" role="button" class="button">Decorate</a>
                 </div>
                 
