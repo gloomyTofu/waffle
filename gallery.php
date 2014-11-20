@@ -479,12 +479,13 @@
                                 </a> <p class="smallTxt left">0 Likes</p>
                             </div>
                             <div class="small-2 columns last">
-                                 <a href="#" data-reveal-id="galleryDetail" class="item custom-button share-button">                                 <svg class="icon_more svgMini" viewBox="-4 5 40 25"><use xlink:href="images/mini-svg-icons.svg#icon_more"></use></svg>                             </a>
+                                 <a href="#" data-reveal-id="galleryDetail" class="item custom-button share-button">                                            <svg class="icon_more svgMini" viewBox="-4 5 40 25"><use xlink:href="images/mini-svg-icons.svg#icon_more"></use></svg>                             
+                                </a>
                             </div>
                         </div>
                     </div>
                 </li><!--end of li.gallery-frame-->
-            </ul>
+            </ul>  
             </section><!--end of all user gallery-->
         </div>
         
@@ -511,7 +512,7 @@
                     </div>
                     <div class="small-2 columns text-center">
                         <a class="item custom-button share-button" href="#">
-                            <svg class="icon_comment svgMini" viewBox="-5 -5 38 38"><use xlink:href="images/mini-svg-icons.svg#icon_comment-solid"></use></svg> <small>Comment</small>
+                            <svg class="icon_comment svgMini" viewBox="-9 -7 39 39"><use xlink:href="images/mini-svg-icons.svg#icon_comment-solid"></use></svg> <small>Comment</small>
                         </a>
                     </div>
                     <div class="small-2 columns text-center">

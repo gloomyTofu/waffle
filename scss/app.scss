@@ -47,11 +47,14 @@ $font-weight-light: 300;
 
 //Touch Scrolling <http://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/>
 .touch { -webkit-overflow-scrolling: touch; }
+a.pageLink, .modal-popup, .custom-menu-icon {cursor:pointer; }
 
 p.smallTxt {font-size:90%; }
 a.text-link {text-decoration:underline; }
 span.waffle {text-transform:uppercase; font-family:$font-family-waffle; letter-spacing: 0.15em; }
 
+/* POSTION */
+.fixed-bottom {position: fixed; bottom:0; }
 
 /* MARGINS & PADDING */
 .row .columns h2.no-margin {margin-bottom:0; }
@@ -66,8 +69,8 @@ span.waffle {text-transform:uppercase; font-family:$font-family-waffle; letter-s
 
 /* NAV */
 .tab-bar .custom-menu-icon {
-    width: 2.75rem;
-    height: 2.75rem;
+    width: 2.5rem;
+    height: 2.5rem;
     display: block;
     padding: 0;
     position: relative;
@@ -182,7 +185,8 @@ li .gallery-frame {border:1px solid $waffle-grey; }
 .buttons-row .columns {padding:0; }
 .buttons-row .item .menu-icon {width:100%; }
 .buttons-row svg.svgMini {width:30px; height:25px; margin-right:8px; }
-.singleModal .buttons-row .columns {border-left:1px solid $waffle-grey; height:4rem; }
+.singleModal .buttons-row .columns {border-left:1px solid $waffle-grey; }
+.singleModal .buttons-row a {height:4rem; }
 .singleModal .buttons-row .columns.last {border:none; }
 .singleModal .buttons-row .user-title {margin-top:1em; }
 svg.icon_heart.svgMini, svg.icon_comment.svgMini {fill:$white; stroke:$steel; stroke-width:2; }

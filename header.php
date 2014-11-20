@@ -5,7 +5,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="default">
+        <!--<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">-->
         <title>Waffle Style</title>
         <link rel="stylesheet" href="stylesheets/app.css" />
         <link href='http://fonts.googleapis.com/css?family=Corben:400,700,300|Quicksand' rel='stylesheet' type='text/css'>
@@ -113,15 +113,14 @@
                   </ul>
                 </aside>
                
-               
-               <div class="reveal-modal" data-reveal></div>
-               
-               
                <!--right off-canvas menu-->
                <aside class="right-off-canvas-menu">
                   <ul class="off-canvas-list">
                     <li><label>Account</label></li>
                     <li><a href="#">Profile</a></li>
                     <li><a href="#">Settings</a></li>
+                    <li><a href="#" class="modal-popup" data-reveal-id="login" data-reveal-ajax="login.php?v=1" title="Log In"><span class="waffle">Sign Out</span></a></li>
                   </ul>
                 </aside>
+               
+               <div class="reveal-modal" data-reveal></div>

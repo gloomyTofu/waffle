@@ -7,7 +7,14 @@
         <script>
             $(document).foundation();
             
-            $('.custom-menu-icon').click(function(){false});
+            $(document).ready(function(){
+                $('.custom-menu-icon').click(function(){false});
+        
+                $('.modal-popup').on('click',function(){
+                    var modalName = $(this).attr('data-reveal-id');
+                    $('.reveal-modal').attr('id', modalName);
+                });  
+            });
         </script>
 
     </body>
