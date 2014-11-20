@@ -47,7 +47,8 @@ $font-weight-light: 300;
 
 //Touch Scrolling <http://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/>
 .touch { -webkit-overflow-scrolling: touch; }
-a svg, a.button, a.pageLink, .modal-popup, .custom-menu-icon, h3.recipe-tab, a.tooltip-box {cursor:pointer; }
+a svg, a.button, a.pageLink, .modal-popup, .custom-menu-icon, h3.recipe-tab, a.tooltip-box, #directory a {cursor:pointer; }
+#home a.pageLink, #directory a, #gallery a, a.custom-button.share-button {display:block; }
 
 a.button:hover, a.button:focus, a.button:active {background:$steel; }
 p.smallTxt {font-size:90%; }
@@ -65,6 +66,7 @@ ul.list-style-position-inside li {list-style-position: inside; }
 
 /* MARGINS & PADDING */
 h2.no-margin {margin-bottom:0 !important; }
+.margin-bottom {margin-bottom:1rem !important; }
 
 .no-padding {padding:0 !important; }
 .no-padding-right {padding-right:0 !important; }
@@ -81,8 +83,8 @@ h2.no-margin {margin-bottom:0 !important; }
 
 /* NAV */
 .tab-bar .custom-menu-icon {
-    width: 2.25rem;
-    height: 2.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
     display: block;
     padding: 0;
     position: relative;
@@ -284,6 +286,10 @@ svg.placeholder-circle.left {
 
 // Small (mobile) Sizes Only
 @media only screen and (max-width: 25em) {
+    .tab-bar .custom-menu-icon {
+        width: 2.25rem;
+        height: 2.25rem;
+    }
     .main-section {padding:1rem 0; }
     
     /* GALLERY */
