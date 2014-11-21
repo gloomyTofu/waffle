@@ -9068,7 +9068,7 @@ a.text-link {
 span.waffle {
   text-transform: uppercase;
   font-family: "Quicksand", sans-serif;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.15rem;
 }
 
 /* line 58, ../scss/app.scss */
@@ -9111,50 +9111,55 @@ h2.no-margin {
 }
 
 /* line 72, ../scss/app.scss */
+.margin-bottom-2 {
+  margin-bottom: 2rem !important;
+}
+
+/* line 74, ../scss/app.scss */
 .no-padding {
   padding: 0 !important;
 }
 
-/* line 73, ../scss/app.scss */
+/* line 75, ../scss/app.scss */
 .no-padding-right {
   padding-right: 0 !important;
 }
 
-/* line 74, ../scss/app.scss */
+/* line 76, ../scss/app.scss */
 .no-padding-left {
   padding-left: 0 !important;
 }
 
-/* line 75, ../scss/app.scss */
+/* line 77, ../scss/app.scss */
 .padding-top {
   padding-top: 1rem !important;
 }
 
-/* line 76, ../scss/app.scss */
+/* line 78, ../scss/app.scss */
 .padding-left {
   padding-left: 1rem !important;
 }
 
-/* line 77, ../scss/app.scss */
+/* line 79, ../scss/app.scss */
 .padding-right {
   padding-right: 1rem !important;
 }
 
 /* BORDER */
-/* line 80, ../scss/app.scss */
+/* line 82, ../scss/app.scss */
 .border-bottom {
-  border-bottom: 1px solid gainsboro !important;
+  border-bottom: 0.0625rem solid gainsboro !important;
   margin-bottom: 2rem !important;
 }
 
 /* DISPLAY */
-/* line 83, ../scss/app.scss */
+/* line 85, ../scss/app.scss */
 .row .display-inline {
   display: inline !important;
 }
 
 /* NAV */
-/* line 87, ../scss/app.scss */
+/* line 89, ../scss/app.scss */
 .tab-bar .custom-menu-icon {
   width: 2.5rem;
   height: 2.5rem;
@@ -9166,43 +9171,43 @@ h2.no-margin {
 }
 
 /* OFF-CANVAS */
-/* line 99, ../scss/app.scss */
+/* line 101, ../scss/app.scss */
 .off-canvas-wrap, .inner-wrap {
   min-height: 100%;
 }
 
-/* line 103, ../scss/app.scss */
+/* line 105, ../scss/app.scss */
 .off-canvas-wrap {
   height: 100%;
   overflow-y: auto;
 }
 
-/* line 108, ../scss/app.scss */
+/* line 110, ../scss/app.scss */
 .main-section {
   padding: 2.25rem 0 0;
-  margin: 0 1em;
+  margin: 0 1rem;
 }
 
-/* line 112, ../scss/app.scss */
+/* line 114, ../scss/app.scss */
 .main-section h1 {
   font-weight: 400;
   margin-bottom: 1rem;
   margin-left: 1rem;
 }
 
-/* line 117, ../scss/app.scss */
+/* line 119, ../scss/app.scss */
 h1 a:hover, h1 a:focus {
   color: #666666;
 }
 
-/* line 121, ../scss/app.scss */
+/* line 123, ../scss/app.scss */
 .alert-box.footer-bottom {
   background: rgba(247, 247, 247, 0.7);
   position: fixed;
   width: 100%;
   left: 0%;
   bottom: 0;
-  font-size: 2em;
+  font-size: 2rem;
   text-align: right;
   color: #333;
   border: none;
@@ -9210,81 +9215,81 @@ h1 a:hover, h1 a:focus {
   margin: 0;
 }
 
-/* line 134, ../scss/app.scss */
+/* line 136, ../scss/app.scss */
 .alert-box.footer-bottom .title span {
   font-size: 50%;
 }
 
 /* SVG */
-/* line 138, ../scss/app.scss */
+/* line 140, ../scss/app.scss */
 svg.placeholder {
   background: #efefef;
   width: 100%;
 }
 
-/* line 139, ../scss/app.scss */
+/* line 141, ../scss/app.scss */
 svg.placeholder-circle {
   fill: #efefef;
   width: 100%;
 }
 
-/* line 140, ../scss/app.scss */
+/* line 142, ../scss/app.scss */
 svg.placeholder-circle, svg.placeholder line {
   stroke: gainsboro;
   stroke-width: 1;
 }
 
-/* line 142, ../scss/app.scss */
+/* line 144, ../scss/app.scss */
 nav .svgIcon {
   fill: #222222;
 }
 
-/* line 143, ../scss/app.scss */
+/* line 145, ../scss/app.scss */
 nav .svgIcon:hover, .title .svgIcon:hover, nav .svgIcon:focus, .title .svgIcon:focus, nav .svgIcon:active, .title .svgIcon:active {
   fill: #666666;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-/* line 145, ../scss/app.scss */
+/* line 147, ../scss/app.scss */
 .title .svgIcon {
-  width: 30px;
-  height: 25px;
+  width: 1.875rem;
+  height: 1.5625rem;
   fill: black;
 }
 
-/* line 151, ../scss/app.scss */
+/* line 153, ../scss/app.scss */
 .left-off-canvas-menu ul.off-canvas-list li a {
   padding-bottom: 0.75rem;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.75);
 }
 
-/* line 156, ../scss/app.scss */
+/* line 158, ../scss/app.scss */
 .item .menu-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.3125rem;
   position: relative;
-  top: 5px;
+  top: 0.3125rem;
 }
 
-/* line 164, ../scss/app.scss */
+/* line 166, ../scss/app.scss */
 svg.svgMini {
   fill: #666666;
 }
 
-/* line 168, ../scss/app.scss */
+/* line 170, ../scss/app.scss */
 svg.svgMini:hover, svg.svgMini:focus, svg.svgMini:active {
   fill: gainsboro;
 }
 
-/* line 172, ../scss/app.scss */
+/* line 174, ../scss/app.scss */
 .profile-image {
   width: 8rem;
 }
 
 /* GLOBAL ICONS */
-/* line 175, ../scss/app.scss */
+/* line 177, ../scss/app.scss */
 .social-share-icon {
   position: absolute;
   top: 5rem;
@@ -9293,327 +9298,333 @@ svg.svgMini:hover, svg.svgMini:focus, svg.svgMini:active {
   height: 2rem;
 }
 
-/* line 182, ../scss/app.scss */
+/* line 184, ../scss/app.scss */
 a.custom-button.share-button small {
   position: relative;
   top: -0.25rem;
 }
 
-/* line 183, ../scss/app.scss */
+/* line 185, ../scss/app.scss */
 a.custom-button.share-button:hover, a.custom-button.share-button:focus, a.custom-button.share-button:active {
   color: gainsboro;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 /* GALLERY */
-/* line 187, ../scss/app.scss */
+/* line 189, ../scss/app.scss */
 #gallery .small-12.columns, #galleryDetail .small-12.columns {
   padding: 0;
 }
 
-/* line 188, ../scss/app.scss */
+/* line 190, ../scss/app.scss */
 #gallery ul.tabs {
   padding-bottom: 1rem;
 }
 
-/* line 189, ../scss/app.scss */
+/* line 191, ../scss/app.scss */
 #gallery li.tab-title {
   width: 33%;
   text-align: center;
   line-height: 1.25rem;
 }
 
-/* line 190, ../scss/app.scss */
+/* line 192, ../scss/app.scss */
 #gallery li.tab-title > a {
   border: 1px solid #dcdcdc;
   padding: 0.5rem 0;
 }
 
-/* line 191, ../scss/app.scss */
+/* line 193, ../scss/app.scss */
 #gallery ul {
   line-height: 0;
 }
 
-/* line 192, ../scss/app.scss */
+/* line 194, ../scss/app.scss */
 li .gallery-frame {
-  border: 1px solid gainsboro;
+  border: 0.0625rem solid gainsboro;
 }
 
-/* line 193, ../scss/app.scss */
+/* line 195, ../scss/app.scss */
 #gallery .buttons-row .columns {
   border-right: 1px solid gainsboro;
   height: 2.5rem;
 }
 
-/* line 194, ../scss/app.scss */
+/* line 196, ../scss/app.scss */
 #gallery .buttons-row .columns.last {
   border: none;
 }
 
-/* line 196, ../scss/app.scss */
+/* line 198, ../scss/app.scss */
 #gallery p {
   font-size: 80%;
 }
 
-/* line 197, ../scss/app.scss */
+/* line 199, ../scss/app.scss */
 #gallery p, #gallery svg.svgMini {
   margin-top: 0.5rem;
 }
 
 /* GALLERY/REVEAL MODAL - ICONS */
-/* line 201, ../scss/app.scss */
+/* line 203, ../scss/app.scss */
 .buttons-row .columns {
   padding: 0;
 }
 
-/* line 202, ../scss/app.scss */
+/* line 204, ../scss/app.scss */
 .buttons-row .item .menu-icon {
   width: 100%;
 }
 
-/* line 203, ../scss/app.scss */
-.buttons-row svg.svgMini {
-  width: 30px;
-  height: 25px;
-  margin-right: 8px;
-}
-
-/* line 204, ../scss/app.scss */
-.singleModal .buttons-row .columns {
-  border-left: 1px solid gainsboro;
-}
-
 /* line 205, ../scss/app.scss */
+.buttons-row svg.svgMini {
+  width: 1.875rem;
+  height: 1.5625rem;
+  margin-right: 0.5rem;
+}
+
+/* line 206, ../scss/app.scss */
+.singleModal .buttons-row .columns {
+  border-left: 0.0625rem solid gainsboro;
+}
+
+/* line 207, ../scss/app.scss */
 .singleModal .buttons-row a {
   height: 4rem;
 }
 
-/* line 206, ../scss/app.scss */
+/* line 208, ../scss/app.scss */
 .singleModal .buttons-row .columns.last {
   border: none;
 }
 
-/* line 207, ../scss/app.scss */
+/* line 209, ../scss/app.scss */
 .singleModal .buttons-row .user-title {
-  margin-top: 1em;
+  margin-top: 0.0625rem;
 }
 
-/* line 208, ../scss/app.scss */
+/* line 210, ../scss/app.scss */
 svg.icon_heart.svgMini, svg.icon_comment.svgMini {
   fill: white;
   stroke: #666666;
   stroke-width: 2;
 }
 
-/* line 209, ../scss/app.scss */
+/* line 211, ../scss/app.scss */
 svg.icon_heart.svgMini:hover, svg.icon_comment.svgMini:hover, svg.icon_comment.svgMini:active {
   fill: gainsboro;
   stroke: gainsboro;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-/* line 211, ../scss/app.scss */
+/* line 213, ../scss/app.scss */
 .share-button svg.svgMini {
   margin-right: 0;
   width: 100%;
 }
 
-/* line 212, ../scss/app.scss */
+/* line 214, ../scss/app.scss */
 .summary-icons svg.svgMini {
   fill: gainsboro;
   stroke: gainsboro;
 }
 
-/* line 213, ../scss/app.scss */
+/* line 215, ../scss/app.scss */
 .summary-icons svg.svgMini {
-  width: 20px;
-  height: 20px;
-  margin-left: 2px;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: 0.125rem;
   position: relative;
-  top: 4px;
+  top: 0.25rem;
 }
 
 /* REVEAL MODAL */
-/* line 217, ../scss/app.scss */
+/* line 219, ../scss/app.scss */
 .reveal-modal, dialog {
   padding: 0;
 }
 
-/* line 218, ../scss/app.scss */
+/* line 220, ../scss/app.scss */
 .singleModal h2 {
   margin: 3rem 0 2rem;
 }
 
-/* line 219, ../scss/app.scss */
+/* line 221, ../scss/app.scss */
 .singleModal .buttons-row {
   padding: 0 1rem;
 }
 
-/* line 220, ../scss/app.scss */
+/* line 222, ../scss/app.scss */
 .singleModal .buttons-row .user-title {
   position: absolute;
   top: 1rem;
 }
 
-/* line 221, ../scss/app.scss */
+/* line 223, ../scss/app.scss */
 .singleModal svg.placeholder {
   height: 25rem;
 }
 
-/* line 222, ../scss/app.scss */
+/* line 224, ../scss/app.scss */
 .singleModal .buttons-row svg.svgMini {
-  height: 26px;
+  height: 1.625rem;
 }
 
 /* REVEAL MODAL - TABS */
-/* line 225, ../scss/app.scss */
+/* line 227, ../scss/app.scss */
 .reveal-modal ul.tabs, dialog ul.tabs {
   background-color: #efefef;
 }
 
-/* line 226, ../scss/app.scss */
+/* line 228, ../scss/app.scss */
 .reveal-modal .tabs-content, dialog .tabs-content {
   padding: 3.5rem 1rem 1.5rem;
 }
 
-/* line 227, ../scss/app.scss */
+/* line 229, ../scss/app.scss */
 .reveal-modal ul.circle-icon-list, dialog ul.circle-icon-list {
   margin: 0;
 }
 
-/* line 228, ../scss/app.scss */
+/* line 230, ../scss/app.scss */
 .reveal-modal ul.circle-icon-list li, dialog ul.circle-icon-list li {
   list-style: none;
   clear: both;
   padding-right: 0.5rem;
 }
 
-/* line 229, ../scss/app.scss */
+/* line 231, ../scss/app.scss */
 ul.social-share-buttons li {
   margin: 1rem 0.12rem;
 }
 
-/* line 230, ../scss/app.scss */
+/* line 232, ../scss/app.scss */
 ul.social-share-buttons {
   margin-bottom: 5rem;
 }
 
-/* line 231, ../scss/app.scss */
+/* line 233, ../scss/app.scss */
 ul.social-share-buttons svg {
   fill: #fff;
 }
 
-/* line 233, ../scss/app.scss */
+/* line 235, ../scss/app.scss */
 ul.social-share-buttons a.facebook {
   background-color: #3B5998;
 }
 
-/* line 234, ../scss/app.scss */
+/* line 236, ../scss/app.scss */
 ul.social-share-buttons a.twitter {
   background-color: #55ACEE;
 }
 
-/* line 235, ../scss/app.scss */
+/* line 237, ../scss/app.scss */
 ul.social-share-buttons a.email {
   background-color: #fa694b;
 }
 
-/* line 237, ../scss/app.scss */
+/* line 239, ../scss/app.scss */
 ul.social-share-buttons a.facebook:hover, ul.social-share-buttons a.facebook:focus {
   background-color: #294379;
 }
 
-/* line 238, ../scss/app.scss */
+/* line 240, ../scss/app.scss */
 ul.social-share-buttons a.twitter:hover, ul.social-share-buttons a.twitter:focus {
   background-color: #388dce;
 }
 
-/* line 239, ../scss/app.scss */
+/* line 241, ../scss/app.scss */
 ul.social-share-buttons a.email:hover, ul.social-share-buttons a.email:focus {
   background-color: #db5a3f;
 }
 
+/* REVEAL MODAL - GAME MODE */
+/* line 244, ../scss/app.scss */
+.gameMode svg.placeholder {
+  height: 15rem;
+}
+
 /* WAFFLE DIRECTORY */
-/* line 242, ../scss/app.scss */
+/* line 248, ../scss/app.scss */
 #waffleDetail .button-group li {
   margin: 0 0.25rem;
 }
 
-/* line 243, ../scss/app.scss */
+/* line 249, ../scss/app.scss */
 #waffleDetail li a.button {
   width: 9.75rem;
 }
 
-/* line 244, ../scss/app.scss */
+/* line 250, ../scss/app.scss */
 #waffleDetail p {
   padding: 0 1.5rem 1rem;
 }
 
-/* line 245, ../scss/app.scss */
+/* line 251, ../scss/app.scss */
 #waffleDetail svg {
   margin-bottom: 1rem;
 }
 
 /* WAFFLE INFO */
-/* line 248, ../scss/app.scss */
+/* line 254, ../scss/app.scss */
 svg.waffle-detail-img {
   width: 100%;
   position: relative;
 }
 
-/* line 249, ../scss/app.scss */
+/* line 255, ../scss/app.scss */
 .waffle-detail.columns {
   background-color: #efefef;
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
 
-/* line 250, ../scss/app.scss */
+/* line 256, ../scss/app.scss */
 .waffle-detail a.button {
   width: 12rem;
 }
 
-/* line 252, ../scss/app.scss */
+/* line 258, ../scss/app.scss */
 a.tooltip-box {
   position: absolute;
 }
 
-/* line 253, ../scss/app.scss */
+/* line 259, ../scss/app.scss */
 .tooltip-box .waffle-tooltip {
-  width: 35px;
-  height: 35px;
+  width: 2.1875rem;
+  height: 2.1875rem;
 }
 
-/* line 254, ../scss/app.scss */
+/* line 260, ../scss/app.scss */
 .tooltip-box.tip-a {
   top: 11%;
   left: 24%;
 }
 
-/* line 255, ../scss/app.scss */
+/* line 261, ../scss/app.scss */
 .tooltip-box.tip-b {
   top: 49%;
   right: 23%;
 }
 
-/* line 256, ../scss/app.scss */
+/* line 262, ../scss/app.scss */
 .tooltip-box.tip-c {
   bottom: 10%;
   left: 37%;
 }
 
-/* line 257, ../scss/app.scss */
+/* line 263, ../scss/app.scss */
 .has-tip, .has-tip:hover, .has-tip:focus {
   border-bottom: 0;
 }
 
-/* line 259, ../scss/app.scss */
+/* line 265, ../scss/app.scss */
 .waffle-detail h3 {
   margin-bottom: 1.5rem;
 }
 
 /* RECIPE SLIDER */
-/* line 262, ../scss/app.scss */
+/* line 268, ../scss/app.scss */
 .recipe-slider h3.recipe-tab {
   padding: 1rem 1.5rem 0.75rem;
   border: 1px solid #efefef;
@@ -9625,22 +9636,22 @@ a.tooltip-box {
   float: left;
 }
 
-/* line 272, ../scss/app.scss */
+/* line 278, ../scss/app.scss */
 .recipe-slider .row .columns {
   font-size: 70%;
 }
 
-/* line 273, ../scss/app.scss */
+/* line 279, ../scss/app.scss */
 .recipe-slider .row .columns small {
   font-size: 100%;
 }
 
-/* line 274, ../scss/app.scss */
+/* line 280, ../scss/app.scss */
 .recipe-slider .row {
   border-bottom: 1px solid #efefef;
 }
 
-/* line 275, ../scss/app.scss */
+/* line 281, ../scss/app.scss */
 .recipe-content.row {
   padding: 2.23rem 0 3rem 1.5rem;
   background-color: #fff;
@@ -9648,131 +9659,131 @@ a.tooltip-box {
 }
 
 /* REVEAL MODAL - LEADERBOARD & ACHIEVEMENT */
-/* line 278, ../scss/app.scss */
+/* line 284, ../scss/app.scss */
 svg.placeholder-circle.left {
-  width: 115px;
-  height: 100px;
+  width: 7.1875rem;
+  height: 6.25rem;
 }
 
-/* line 282, ../scss/app.scss */
+/* line 288, ../scss/app.scss */
 .circle-icon-list a span {
   position: relative;
   top: 2.12rem;
 }
 
-/* line 286, ../scss/app.scss */
+/* line 292, ../scss/app.scss */
 .user-ranking {
   padding: 2rem;
 }
 
-@media only screen and (max-width: 25em) {
-  /* line 291, ../scss/app.scss */
+@media only screen and (max-width: 25rem) {
+  /* line 297, ../scss/app.scss */
   .tab-bar .custom-menu-icon {
     width: 2.25rem;
     height: 2.25rem;
   }
 
-  /* line 295, ../scss/app.scss */
+  /* line 301, ../scss/app.scss */
   .main-section {
     padding: 1rem 0;
   }
 
   /* GALLERY */
-  /* line 298, ../scss/app.scss */
+  /* line 304, ../scss/app.scss */
   .gallery-frame svg.placeholder {
     height: 10rem;
   }
 
   /* DIRECTORY */
-  /* line 301, ../scss/app.scss */
+  /* line 307, ../scss/app.scss */
   #directory [class*="block-grid-"] > li {
     height: 13rem;
   }
 
-  /* line 302, ../scss/app.scss */
+  /* line 308, ../scss/app.scss */
   #waffleDetail li a.button {
     font-size: 90%;
     margin-bottom: 0.75rem;
   }
 
   /* REVEAL MODAL */
-  /* line 305, ../scss/app.scss */
+  /* line 311, ../scss/app.scss */
   .tabs dd > a, .tabs .tab-title > a {
     padding: 1rem 1rem;
   }
 
-  /* line 306, ../scss/app.scss */
+  /* line 312, ../scss/app.scss */
   .user-ranking {
     padding: 2rem 0 3rem 1rem;
   }
 }
 @media only screen and (min-width: 40.063em) {
   /* TEXT */
-  /* line 313, ../scss/app.scss */
+  /* line 319, ../scss/app.scss */
   .medium-text-right {
     text-align: right !important;
   }
 
-  /* line 314, ../scss/app.scss */
+  /* line 320, ../scss/app.scss */
   .medium-text-left {
     text-align: left !important;
   }
 
   /* BORDERS */
-  /* line 317, ../scss/app.scss */
+  /* line 323, ../scss/app.scss */
   .columns.border-right {
     border-right: 1px solid gainsboro;
   }
 
-  /* line 320, ../scss/app.scss */
+  /* line 326, ../scss/app.scss */
   .columns.border-right.last {
     border-right: none;
     padding-left: 2.5rem;
   }
 
   /* WAFFLE DIRECTORY */
-  /* line 323, ../scss/app.scss */
+  /* line 329, ../scss/app.scss */
   #waffleDetail .button-group li {
     margin: 0 0.5rem;
   }
 
-  /* line 324, ../scss/app.scss */
+  /* line 330, ../scss/app.scss */
   #waffleDetail svg {
     margin-bottom: 2rem;
   }
 
-  /* line 325, ../scss/app.scss */
+  /* line 331, ../scss/app.scss */
   #waffleDetail p {
     padding: 1rem 0;
     text-align: left;
   }
 
-  /* line 326, ../scss/app.scss */
+  /* line 332, ../scss/app.scss */
   #waffleDetail li a.button {
     width: 11rem;
   }
 
-  /* line 327, ../scss/app.scss */
+  /* line 333, ../scss/app.scss */
   #waffleDetail .button-group {
     margin-bottom: 2rem;
   }
 
   /* WAFFLE INFO */
-  /* line 330, ../scss/app.scss */
+  /* line 336, ../scss/app.scss */
   .waffle-detail a.button {
     width: 100%;
   }
 
   /* REVEAL MODAL */
-  /* line 333, ../scss/app.scss */
+  /* line 339, ../scss/app.scss */
   ul.social-share-buttons li {
     margin: 1rem 0.5rem;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 338, ../scss/app.scss */
+  /* line 344, ../scss/app.scss */
   .tooltip-box .waffle-tooltip {
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
   }
 }

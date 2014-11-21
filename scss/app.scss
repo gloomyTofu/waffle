@@ -53,7 +53,7 @@ a svg, a.button, a.pageLink, .modal-popup, .custom-menu-icon, h3.recipe-tab, a.t
 a.button:hover, a.button:focus, a.button:active {background:$steel; }
 p.smallTxt {font-size:90%; }
 a.text-link {text-decoration:underline; }
-span.waffle {text-transform:uppercase; font-family:$font-family-waffle; letter-spacing: 0.15em; }
+span.waffle {text-transform:uppercase; font-family:$font-family-waffle; letter-spacing: 0.15rem; }
 
 ul.list-style-position-inside li {list-style-position:inside; }
 
@@ -69,6 +69,8 @@ h2.no-margin {margin-bottom:0 !important; }
 .margin-bottom {margin-bottom:1rem !important; }
 .margin-right {margin-right:1rem !important; }
 
+.margin-bottom-2 {margin-bottom:2rem !important; }
+
 .no-padding {padding:0 !important; }
 .no-padding-right {padding-right:0 !important; }
 .no-padding-left {padding-left:0 !important;}
@@ -77,7 +79,7 @@ h2.no-margin {margin-bottom:0 !important; }
 .padding-right {padding-right:1rem !important;}
 
 /* BORDER */
-.border-bottom {border-bottom:1px solid $waffle-grey !important; margin-bottom:2rem !important; }
+.border-bottom {border-bottom:rem-calc(1) solid $waffle-grey !important; margin-bottom:2rem !important; }
 
 /* DISPLAY */
 .row .display-inline {display:inline !important; }
@@ -107,7 +109,7 @@ h2.no-margin {margin-bottom:0 !important; }
 
 .main-section {
     padding:2.25rem 0 0;
-    margin:0 1em;
+    margin:0 1rem;
 }
 .main-section h1 {
     font-weight: $font-weight-normal;
@@ -124,7 +126,7 @@ h1 a:hover, h1 a:focus {
     width: 100%;
     left:0%;
     bottom: 0;
-    font-size: 2em;
+    font-size: 2rem;
     text-align: right;
     color:#333;
     border:none;
@@ -143,8 +145,8 @@ nav .svgIcon {fill:$waffle-menu-icon-color; }
 nav .svgIcon:hover, .title .svgIcon:hover, nav .svgIcon:focus, .title .svgIcon:focus, nav .svgIcon:active, .title .svgIcon:active {fill:$steel; -webkit-tap-highlight-color: rgba(0,0,0,0); }
 
 .title .svgIcon {
-    width:30px;
-    height:25px;
+    width:rem-calc(30);
+    height:rem-calc(25);
     fill:$primary-color;
 }
 
@@ -154,11 +156,11 @@ nav .svgIcon:hover, .title .svgIcon:hover, nav .svgIcon:focus, .title .svgIcon:f
     color: rgba(255, 255, 255, 0.75);
  }
 .item .menu-icon {
-    width:20px;
-    height:20px;
-    margin-right:5px;
+    width:rem-calc(20);
+    height:rem-calc(20);
+    margin-right:rem-calc(5);
     position:relative;
-    top:5px;
+    top:rem-calc(5);
 }
 
 svg.svgMini {
@@ -189,7 +191,7 @@ a.custom-button.share-button:hover, a.custom-button.share-button:focus, a.custom
 #gallery li.tab-title {width:33%; text-align:center; line-height:1.25rem; }
 #gallery li.tab-title > a {border:1px solid #dcdcdc; padding: 0.5rem 0; }
 #gallery ul {line-height:0; }
-li .gallery-frame {border:1px solid $waffle-grey; }
+li .gallery-frame {border:rem-calc(1) solid $waffle-grey; }
 #gallery .buttons-row .columns {border-right:1px solid $waffle-grey; height:2.5rem; }
 #gallery .buttons-row .columns.last {border:none; }
 
@@ -200,17 +202,17 @@ li .gallery-frame {border:1px solid $waffle-grey; }
 /* GALLERY/REVEAL MODAL - ICONS */
 .buttons-row .columns {padding:0; }
 .buttons-row .item .menu-icon {width:100%; }
-.buttons-row svg.svgMini {width:30px; height:25px; margin-right:8px; }
-.singleModal .buttons-row .columns {border-left:1px solid $waffle-grey; }
+.buttons-row svg.svgMini {width:rem-calc(30); height:rem-calc(25); margin-right:rem-calc(8); }
+.singleModal .buttons-row .columns {border-left:rem-calc(1) solid $waffle-grey; }
 .singleModal .buttons-row a {height:4rem; }
 .singleModal .buttons-row .columns.last {border:none; }
-.singleModal .buttons-row .user-title {margin-top:1em; }
+.singleModal .buttons-row .user-title {margin-top:rem-calc(1); }
 svg.icon_heart.svgMini, svg.icon_comment.svgMini {fill:$white; stroke:$steel; stroke-width:2; }
 svg.icon_heart.svgMini:hover, svg.icon_comment.svgMini:hover, svg.icon_comment.svgMini:active {fill:$waffle-grey; stroke:$waffle-grey; -webkit-tap-highlight-color: rgba(0,0,0,0); }
 
 .share-button svg.svgMini {margin-right:0; width:100%; }
 .summary-icons svg.svgMini {fill:$waffle-grey; stroke:$waffle-grey;}
-.summary-icons svg.svgMini {width:20px; height:20px; margin-left:2px; position:relative; top:4px; }
+.summary-icons svg.svgMini {width:rem-calc(20); height:rem-calc(20); margin-left:rem-calc(2); position:relative; top:rem-calc(4); }
 
 
 /* REVEAL MODAL */
@@ -219,7 +221,7 @@ svg.icon_heart.svgMini:hover, svg.icon_comment.svgMini:hover, svg.icon_comment.s
 .singleModal .buttons-row {padding:0 1rem;}
 .singleModal .buttons-row .user-title {position:absolute; top:1rem;}
 .singleModal svg.placeholder {height:25rem; }
-.singleModal .buttons-row svg.svgMini {height:26px; }
+.singleModal .buttons-row svg.svgMini {height:rem-calc(26); }
 
 /* REVEAL MODAL - TABS */
 .reveal-modal ul.tabs {background-color: $waffle-light-grey; }
@@ -238,6 +240,10 @@ ul.social-share-buttons a.facebook:hover, ul.social-share-buttons a.facebook:foc
 ul.social-share-buttons a.twitter:hover, ul.social-share-buttons a.twitter:focus {background-color:#388dce; }
 ul.social-share-buttons a.email:hover, ul.social-share-buttons a.email:focus {background-color:#db5a3f; }
 
+/* REVEAL MODAL - GAME MODE */
+.gameMode svg.placeholder {height:15rem; }
+
+
 /* WAFFLE DIRECTORY */
 #waffleDetail .button-group li {margin:0 0.25rem; }
 #waffleDetail li a.button {width:9.75rem; }
@@ -250,7 +256,7 @@ svg.waffle-detail-img {width:100%; position:relative; }
 .waffle-detail a.button {width:12rem; }
 .waffle-detail p {}
 a.tooltip-box {position:absolute; }
-.tooltip-box .waffle-tooltip {width:35px; height:35px; }
+.tooltip-box .waffle-tooltip {width:rem-calc(35); height:rem-calc(35); }
 .tooltip-box.tip-a {top:11%; left:24%; }
 .tooltip-box.tip-b {top:49%; right:23%; }
 .tooltip-box.tip-c {bottom:10%; left:37%; }
@@ -276,8 +282,8 @@ a.tooltip-box {position:absolute; }
 
 /* REVEAL MODAL - LEADERBOARD & ACHIEVEMENT */
 svg.placeholder-circle.left {
-    width: 115px;
-    height: 100px;
+    width: rem-calc(115);
+    height:rem-calc(100);
 }
 .circle-icon-list a span {
     position:relative;
@@ -287,7 +293,7 @@ svg.placeholder-circle.left {
 
 
 // Small (mobile) Sizes Only
-@media only screen and (max-width: 25em) {
+@media only screen and (max-width:25rem) {
     .tab-bar .custom-menu-icon {
         width: 2.25rem;
         height: 2.25rem;
@@ -335,5 +341,5 @@ svg.placeholder-circle.left {
 
 // Large (desktop) Sizes and Up
 @media only screen and (min-width: 40.063em) {
-    .tooltip-box .waffle-tooltip {width:50px; height:50px; }
+    .tooltip-box .waffle-tooltip {width:rem-calc(50); height:rem-calc(50); }
 }
