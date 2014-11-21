@@ -1,9 +1,9 @@
-<!-- Game Start -->
-<div id="game-intro">
+<!-- Pause Game -->
+<div id="pause-game">
     <div class="singleModal gameMode">
         <div class="row">
             <div class="small-12 small-centered text-center columns">
-                <h2><span class="waffle">Step 1: Prep</span></h2>
+                <h2><span class="waffle">Instructions</span></h2>
             </div>
         </div>
          <div class="row padding-right padding-left margin-bottom-2">
@@ -12,13 +12,23 @@
                 </svg>
             </div>
             <div class="small-12 small-centered medium-7 medium-uncentered columns small-text-center medium-text-left">
-                <h5><span class="waffle">Instructions</span></h5>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel ligula vehicula, volutpat tortor fermentum, feugiat est.
                 </p>
                 <p>Proin quis molestie erat. Mauris tristique euismod nisi, id dignissim nisl maximus ac. Nunc sit amet nibh nisi. Nullam eget ligula libero.</p>
                 
-                <a href="game-play.php?v=1" role="button" class="pageLink button margin-top">Start Game</a>
+                <a href="#" role="button" class="close-reveal-modal button margin-top">Resume Game</a>
+            </div>
+        </div>
+        <div class="row padding border-top">
+            <div class="small-4 columns">
+                
+            </div>
+            <div class="small-4 columns">
+            
+            </div>
+            <div class="small-4 columns">
+                <?php include 'content/return-home.php'; ?>
             </div>
         </div>
     </div>

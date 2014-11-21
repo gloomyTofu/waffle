@@ -64,8 +64,10 @@ ul.list-style-position-inside li {list-style-position:inside; }
 /* POSITION */
 .fixed-bottom {position:fixed !important; bottom:0 !important; }
 
+
 /* MARGINS & PADDING */
 h2.no-margin {margin-bottom:0 !important; }
+.margin-top {margin-top:1rem !important; }
 .margin-bottom {margin-bottom:1rem !important; }
 .margin-right {margin-right:1rem !important; }
 
@@ -74,12 +76,14 @@ h2.no-margin {margin-bottom:0 !important; }
 .no-padding {padding:0 !important; }
 .no-padding-right {padding-right:0 !important; }
 .no-padding-left {padding-left:0 !important;}
+.padding {padding:1rem !important; }
 .padding-top {padding-top:1rem !important; }
 .padding-left {padding-left:1rem !important;}
 .padding-right {padding-right:1rem !important;}
 
 /* BORDER */
 .border-bottom {border-bottom:rem-calc(1) solid $waffle-grey !important; margin-bottom:2rem !important; }
+.border-top {border-top:rem-calc(1) solid $waffle-grey !important; margin-top:2rem !important;}
 
 /* DISPLAY */
 .row .display-inline {display:inline !important; }
@@ -163,24 +167,28 @@ nav .svgIcon:hover, .title .svgIcon:hover, nav .svgIcon:focus, .title .svgIcon:f
     top:rem-calc(5);
 }
 
-svg.svgMini {
+svg.svgMini, svg.social_share {
     fill:$steel;
 }
 
-svg.svgMini:hover, svg.svgMini:focus, svg.svgMini:active {
+svg.svgMini:hover, svg.svgMini:focus, svg.svgMini:active, svg.social_share:hover, svg.social_share:focus, svg.social_share:active  {
     fill:$waffle-grey;
 }
 
 .profile-image {width:8rem; }
 
 /* GLOBAL ICONS */
-.social-share-icon {
+.social-share-icons {
     position:absolute;
     top:5rem;
     right:0.75rem;
     width:2rem;
     height:2rem;
 }
+.return-home-icon {
+    
+}
+
 a.custom-button.share-button small {position:relative; top:-0.25rem; }
 a.custom-button.share-button:hover, a.custom-button.share-button:focus, a.custom-button.share-button:active {color:$waffle-grey; -webkit-tap-highlight-color: rgba(0,0,0,0); }
 
@@ -291,6 +299,29 @@ svg.placeholder-circle.left {
 }
 .user-ranking {padding:2rem; }
 
+/* WAFFLE GAME */
+.top-bar.gameMode {background: rgba(247, 247, 247, 0.7); height:auto; }
+nav.gameMode a.game-icon {display:block; background-color:transparent; color:$oil; font-size:rem-calc(25); cursor:pointer; }
+nav.gameMode a.game-icon:hover, a.game-icon svg:hover, nav.gameMode a.game-icon:focus, a.game-icon svg:focus, nav.gameMode a.game-icon:active, a.game-icon svg:active {color:$steel; fill:$steel; }
+a.game-icon svg {fill:$oil; width:rem-calc(30); height:rem-calc(30); position:relative; top:0.45rem; }
+
+#game-play label {font-size:rem-calc(16); }
+#game-play .points, #game-play .time-left {
+    font-size:rem-calc(35);
+}
+#game-play .panel {padding:1.25rem; }
+
+/* PAUSE GAME */
+.gameMode .close-reveal-modal.button {
+    font-size:1rem;
+    line-height:normal;
+    position:relative;
+    top:inherit;
+    right:inherit;
+    color:$white;
+    font-weight:400;
+}
+
 
 // Small (mobile) Sizes Only
 @media only screen and (max-width:25rem) {
@@ -311,6 +342,15 @@ svg.placeholder-circle.left {
     .tabs dd > a, .tabs .tab-title > a {padding: 1rem 1rem; }
     .user-ranking {padding: 2rem 0 3rem 1rem; }
     
+}
+
+// Small (mobile) Sizes and Up
+@media only screen and (min-width:25rem) {
+    .position-right {right:1rem !important; }
+    
+    /* GAME MODE */
+    #game-play .points, #game-play .time-left {font-size:rem-calc(40); }
+    #game-play .panel {padding:1.25rem 1.75rem; }
 }
 
 // Medium (tablet) Sizes and Up
@@ -337,6 +377,13 @@ svg.placeholder-circle.left {
     
     /* REVEAL MODAL */
     ul.social-share-buttons li {margin: 1rem 0.5rem; }
+    
+    /* GAME MODE */
+    #game-intro .gameMode a.button, #pause-game .gameMode a.button {
+        float:right;
+        margin-right:1rem;
+        padding-top:1rem; 
+    }
 }
 
 // Large (desktop) Sizes and Up
