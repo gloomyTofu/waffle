@@ -3,7 +3,7 @@
     <div class="singleModal gameMode">
         <div class="row">
             <div class="small-12 small-centered text-center columns">
-                <h2><span class="waffle">Instructions</span></h2>
+                <h4 class="title"><span class="waffle">Instructions</span></h4>
             </div>
         </div>
          <div class="row padding-right padding-left margin-bottom-2">
@@ -21,14 +21,18 @@
             </div>
         </div>
         <div class="row padding border-top">
-            <div class="small-4 columns">
-                
-            </div>
-            <div class="small-4 columns">
-            
-            </div>
-            <div class="small-4 columns">
-                <?php include 'content/return-home.php'; ?>
+            <div class="small-10 small-centered columns">
+                <div class="row">
+                    <div class="small-4 columns">
+
+                    </div>
+                    <div class="small-4 columns">
+
+                    </div>
+                    <div class="small-4 columns">
+                        <?php include 'content/return-home-icon.php'; ?>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

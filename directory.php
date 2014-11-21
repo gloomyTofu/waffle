@@ -106,7 +106,7 @@
             <div class="singleModal">
                 <div class="row">
                     <div class="small-12 small-centered text-center columns">
-                        <h2 class="text-lowercase"><span class="waffle">American Waffle</span></h2>
+                        <h2 class="title"><span class="waffle">American Waffle</span></h2>
                     </div>
                 </div>
                 <div class="row">

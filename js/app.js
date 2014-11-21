@@ -22,7 +22,8 @@ $(function(){
     
     if(Modernizr.history){
 
-        $("a.pageLink").click(function() {
+        $("a.pageLink").click(function(e) {
+            event.preventDefault();
             url = $(this).attr('href');
             if (url.length){
                 history.pushState(null, null, url);
@@ -32,7 +33,7 @@ $(function(){
         });
     }
     
-    function loadContent(href,id){
+    function loadContent(href){
         $mainSection.load(href + ' .main-content', function(){
             $mainSection.fadeIn(500, function() {
                 $mainContent.animate({
@@ -41,7 +42,7 @@ $(function(){
             });
         });
         $('.off-canvas-wrap').removeClass('move-right');
-        $('.reveal-modal-bg, .reveal-modal').fadeOut(2000, function(){
+        $('.reveal-modal-bg, .reveal-modal.open').fadeOut(2000, function(){
             $('.reveal-modal-bg').hide();
             $('.reveal-modal.open').remove();
         });

@@ -3,7 +3,11 @@
 <div class="main-section">
     <section class="main-content" id="game-play"> 
         <div class="row">
-            <?php include 'images/wireframe.svg'; ?>
+            <div class="small-10 small-centered columns">
+                <svg class="game-elements" viewBox="0 0 456.3 250">
+                    <use xlink:href="images/wireframe.svg#bowl"></use>
+                </svg>
+            </div>
         </div>
         <div class="fixed-bottom position-right">
             <div class="points-counter panel text-center left">

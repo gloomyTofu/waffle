@@ -3,7 +3,7 @@
     <div class="singleModal gameMode">
         <div class="row">
             <div class="small-12 small-centered text-center columns">
-                <h2><span class="waffle">Step 1: Prep</span></h2>
+                <h2 class="title"><span class="waffle">Step 1: Prep</span></h2>
             </div>
         </div>
          <div class="row padding-right padding-left margin-bottom-2">

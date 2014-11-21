@@ -63,6 +63,7 @@ ul.list-style-position-inside li {list-style-position:inside; }
 
 /* POSITION */
 .fixed-bottom {position:fixed !important; bottom:0 !important; }
+.display-inline {display:inline !important; }
 
 
 /* MARGINS & PADDING */
@@ -178,7 +179,7 @@ svg.svgMini:hover, svg.svgMini:focus, svg.svgMini:active, svg.social_share:hover
 .profile-image {width:8rem; }
 
 /* GLOBAL ICONS */
-.social-share-icons {
+.social-share-icon {
     position:absolute;
     top:5rem;
     right:0.75rem;
@@ -225,7 +226,7 @@ svg.icon_heart.svgMini:hover, svg.icon_comment.svgMini:hover, svg.icon_comment.s
 
 /* REVEAL MODAL */
 .reveal-modal {padding:0; }
-.singleModal h2 {margin:3rem 0 2rem; }
+.singleModal h2.title, .singleModal h4.title  {margin:3rem 0 2rem; }
 .singleModal .buttons-row {padding:0 1rem;}
 .singleModal .buttons-row .user-title {position:absolute; top:1rem;}
 .singleModal svg.placeholder {height:25rem; }
@@ -310,6 +311,7 @@ a.game-icon svg {fill:$oil; width:rem-calc(30); height:rem-calc(30); position:re
     font-size:rem-calc(35);
 }
 #game-play .panel {padding:1.25rem; }
+#game-play svg.game-elements {}
 
 /* PAUSE GAME */
 .gameMode .close-reveal-modal.button {
@@ -321,7 +323,6 @@ a.game-icon svg {fill:$oil; width:rem-calc(30); height:rem-calc(30); position:re
     color:$white;
     font-weight:400;
 }
-
 
 // Small (mobile) Sizes Only
 @media only screen and (max-width:25rem) {
@@ -345,7 +346,7 @@ a.game-icon svg {fill:$oil; width:rem-calc(30); height:rem-calc(30); position:re
 }
 
 // Small (mobile) Sizes and Up
-@media only screen and (min-width:25rem) {
+@media only screen and (min-width:25.063em) {
     .position-right {right:1rem !important; }
     
     /* GAME MODE */
