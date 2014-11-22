@@ -3,6 +3,7 @@
 <div class="main-section">
     <section class="main-content" id="game-play"> 
         <div class="row">
+<<<<<<< Updated upstream
             <div class="small-10 small-centered columns">
                 <div class="game-elements">
                     <svg class="bowl" viewBox="0 0 456.3 250">
@@ -10,6 +11,11 @@
                     </svg>
                 </div>
             </div>
+=======
+            <svg viewBox="0 0 456.3 250">
+                <use xlink:href="images/wireframe.svg#bowl"></use>
+            </svg>
+>>>>>>> Stashed changes
         </div>
         <div class="fixed-bottom position-right">
             <div class="points-counter panel text-center left">
