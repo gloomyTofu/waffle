@@ -44,7 +44,7 @@
                         </svg>
                     </li>
                     <li class="chocolate decorate-item">
-                        <svg viewBox="0 0 96 86">
+                        <svg viewBox="0 0 96  86">
                             <use xlink:href="images/game-element.svg#chocolate"></use>
                         </svg>
                     </li>
