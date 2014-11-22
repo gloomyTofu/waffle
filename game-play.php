@@ -4,31 +4,33 @@
     <section class="main-content" id="game-play">
         <div class="row">
             <div class="game-elements">
-                <div class="egg game-item">
-                    <svg viewBox="0 0 127 168">
-                        <use xlink:href="images/game-element.svg#egg"></use>
-                    </svg>
-                </div>
-                <div class="egg2 game-item">
-                    <svg viewBox="0 0 127 168">
-                        <use xlink:href="images/game-element.svg#egg"></use>
-                    </svg>
-                </div>
-                <div class="water game-item">
-                    <svg viewBox="0 0 282 284">
-                        <use xlink:href="images/game-element.svg#water"></use>
-                    </svg>
-                </div>
-                <div class="vanilla game-item">
-                    <svg viewBox="0 0 200 200">
-                        <use xlink:href="images/game-element.svg#vanilla"></use>
-                    </svg>
-                </div>
-                <div class="butter game-item">
-                    <svg viewBox="0 0 313 185">
-                        <use xlink:href="images/game-element.svg#butter"></use>
-                    </svg>
-                </div>
+                <a href="" class="modal-popup" data-reveal-id="game-intro2" data-reveal-ajax="game-intro2.php?v=1" title="Next Stage" >
+                    <div class="egg game-item">
+                        <svg viewBox="0 0 127 168">
+                            <use xlink:href="images/game-element.svg#egg"></use>
+                        </svg>
+                    </div>
+                    <div class="egg2 game-item">
+                        <svg viewBox="0 0 127 168">
+                            <use xlink:href="images/game-element.svg#egg"></use>
+                        </svg>
+                    </div>
+                    <div class="water game-item">
+                        <svg viewBox="0 0 282 284">
+                            <use xlink:href="images/game-element.svg#water"></use>
+                        </svg>
+                    </div>
+                    <div class="vanilla game-item">
+                        <svg viewBox="0 0 200 200">
+                            <use xlink:href="images/game-element.svg#vanilla"></use>
+                        </svg>
+                    </div>
+                    <div class="butter game-item">
+                        <svg viewBox="0 0 313 185">
+                            <use xlink:href="images/game-element.svg#butter"></use>
+                        </svg>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="row">

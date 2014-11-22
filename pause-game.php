@@ -21,13 +21,13 @@
             </div>
         </div>
         <div class="row padding border-top">
-            <div class="small-10 small-centered columns">
+            <div class="small-12 small-centered columns">
                 <div class="row">
                     <div class="small-4 columns">
-
+                        <?php include 'content/view-recipe-icon.php'; ?>
                     </div>
                     <div class="small-4 columns">
-
+                        <?php include 'content/start-over-icon.php'; ?>
                     </div>
                     <div class="small-4 columns">
                         <?php include 'content/return-home-icon.php'; ?>

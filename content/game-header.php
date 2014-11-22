@@ -31,5 +31,3 @@
         </nav>
                
         <div class="reveal-modal" data-reveal></div>
-        
-        <a href="#" class="item custom-menu-icon modal-popup"

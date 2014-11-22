@@ -4,7 +4,7 @@ $(document).ready(function(){
     
     document.addEventListener("touchstart", function(){}, true);
     
-    $('h3.recipe-tab').click(function(){
+    $('h3.recipe-tab, .recipe-content').click(function(){
        $('.recipe-content.row').slideToggle('slow'); 
     });
 });

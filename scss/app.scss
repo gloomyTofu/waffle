@@ -64,6 +64,7 @@ ul.list-style-position-inside li {list-style-position:inside; }
 /* POSITION */
 .fixed-bottom {position:fixed !important; bottom:0 !important; }
 .position-right {right:0.75rem !important; }
+.position-minus-left {left:-0.2rem !important; }
 .display-inline {display:inline !important; }
 
 
@@ -255,7 +256,7 @@ ul.social-share-buttons a.email:hover, ul.social-share-buttons a.email:focus {ba
 
 
 /* WAFFLE DIRECTORY */
-#waffleDetail .button-group li {margin:0 0.25rem; }
+#waffleDetail .button-group li, #game-play .button-group li {margin:0 0.25rem; }
 #waffleDetail li a.button {width:9.75rem; }
 #waffleDetail p {padding:0 1.5rem 1rem; }
 #waffleDetail svg {margin-bottom: 1rem; }
@@ -325,10 +326,27 @@ a.game-icon svg {fill:$oil; width:rem-calc(30); height:rem-calc(30); position:re
 .butter.game-item {left:85%; top:5rem; }
 
 .whisk.game-item {left:65%; top:-1rem; }
-
 .pitcher.game-item {left:65%; top:-1rem; }
 
-.decorate-item {width:23%; }
+.game-waffle.game-item {}
+.syrup.game-item {left:11%; top:1.2rem; }
+.strawberry.game-item {left:34%; top:6rem; }
+.game-elements .game-waffle {width:100%; }
+.game-elements .syrup {width:72%; }
+.game-elements .strawberry {width:25%; }
+
+.decorate-item {width:20%; }
+li.bacon.decorate-item {width:25%; }
+
+.button-group .add-gallery span {position:relative; top:rem-calc(-8); padding-left: 0.25rem;}
+.button.small.email, .button.small.add-gallery {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+/* ADD TO GALLERY */
+.singleModal .game-elements {width:16rem; height:16rem; margin: 0 auto;  }
+.singleModal form {margin:1rem 0; }
 
 /* PAUSE GAME */
 .gameMode .close-reveal-modal.button {
@@ -354,7 +372,7 @@ a.game-icon svg {fill:$oil; width:rem-calc(30); height:rem-calc(30); position:re
     
     /* DIRECTORY */
     #directory [class*="block-grid-"] > li {height:13rem; }
-    #waffleDetail li a.button  {font-size:90%; margin-bottom:0.75rem; }
+    #waffleDetail li a.button, #game-play li a.button {font-size:90%; margin-bottom:0.75rem; }
     
     /* REVEAL MODAL */
     .tabs dd > a, .tabs .tab-title > a {padding: 1rem 1rem; }
@@ -367,9 +385,7 @@ a.game-icon svg {fill:$oil; width:rem-calc(30); height:rem-calc(30); position:re
     .game-elements .butter {width:20%; }
     
     .game-elements .whisk {width:40%; }
-    
     .game-elements .pitcher {width:40%; }
-    .game-elements .game-waffle {width:40%; }
     
     .drag-target {top:6rem; }
     .drag-target.waffle-decorate {top:3rem; }
@@ -389,9 +405,7 @@ a.game-icon svg {fill:$oil; width:rem-calc(30); height:rem-calc(30); position:re
     .game-elements .butter {width:20%; }
     
     .game-elements .whisk {width:35%; }
-    
     .game-elements .pitcher {width:35%; }
-    .game-elements .game-waffle {width:60%; }
     
     .drag-target {top:10rem; }
     .drag-target.waffle-iron {top:6rem; }
@@ -429,6 +443,11 @@ a.game-icon svg {fill:$oil; width:rem-calc(30); height:rem-calc(30); position:re
         margin-right:1rem;
         padding-top:1rem; 
     }
+    .syrup.game-item {top:1.75rem; }
+    .strawberry.game-item {top:10rem; }
+    
+    .singleModal .syrup.game-item {top:1.2rem; }
+    .singleModal .strawberry.game-item {top:6rem; }
 }
 
 // Large (desktop) Sizes and Up
