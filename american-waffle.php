@@ -24,7 +24,7 @@
                 <h3><span class="waffle">American Waffle</span></h3>
                 <div class="button-group">
                     <a href="#" class="modal-popup button" data-reveal-id="game-start" data-reveal-ajax="game-intro.php?v=1" title="Play Game" role="button">Play Game</a>
-                    <a href="#" role="button" class="button">Decorate</a>
+                    <a href="#" class="modal-popup button" data-reveal-id="game-intro4" data-reveal-ajax="game-intro4.php?v=1" title="Decorate Waffle" role="button">Decorate</a>
                 </div>
                 
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel ligula vehicula, volutpat tortor fermentum, feugiat est. Morbi eget congue erat. Vestibulum nec odio purus. In metus leo, luctus in ligula in, hendrerit varius neque.</p>

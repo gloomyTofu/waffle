@@ -127,7 +127,7 @@
                             <li><a href="american-waffle.php?v=1" role="button" class="pageLink button">More Info</a></li>
                             <li><a href="#" role="button" class="button">Recipe</a></li>
                             <li><a href="#" class="modal-popup button" data-reveal-id="game-intro" data-reveal-ajax="game-intro.php?v=1" title="Play Game" role="button">Play Game</a></li>
-                            <li><a href="#" role="button" class="button">Decorate</a></li>
+                            <li><a href="#" class="modal-popup button" data-reveal-id="game-intro4" data-reveal-ajax="game-intro4.php?v=1" title="Decorate Waffle" >Decorate</a></li>
                         </ul>
                     </div>
                 </div>

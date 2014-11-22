@@ -63,6 +63,7 @@ ul.list-style-position-inside li {list-style-position:inside; }
 
 /* POSITION */
 .fixed-bottom {position:fixed !important; bottom:0 !important; }
+.position-right {right:0.75rem !important; }
 .display-inline {display:inline !important; }
 
 
@@ -289,6 +290,9 @@ a.tooltip-box {position:absolute; }
 .recipe-slider .row {border-bottom: 1px solid #efefef; }
 .recipe-content.row {padding: 2.23rem 0 3rem 1.5rem; background-color:#fff; display:none; }
 
+/* DECORATE SLIDER */
+.decorate-content.row {padding: 2.23rem 1rem; background-color:#fff; display:none; }
+
 /* REVEAL MODAL - LEADERBOARD & ACHIEVEMENT */
 svg.placeholder-circle.left {
     width: rem-calc(115);
@@ -301,7 +305,7 @@ svg.placeholder-circle.left {
 .user-ranking {padding:2rem; }
 
 /* WAFFLE GAME */
-.top-bar.gameMode {background: rgba(247, 247, 247, 0.7); height:auto; }
+.top-bar.gameMode {background: rgba(247, 247, 247, 0.7); height:auto; z-index:1; }
 nav.gameMode a.game-icon {display:block; background-color:transparent; color:$oil; font-size:rem-calc(25); cursor:pointer; }
 nav.gameMode a.game-icon:hover, a.game-icon svg:hover, nav.gameMode a.game-icon:focus, a.game-icon svg:focus, nav.gameMode a.game-icon:active, a.game-icon svg:active {color:$steel; fill:$steel; }
 a.game-icon svg {fill:$oil; width:rem-calc(30); height:rem-calc(30); position:relative; top:0.45rem; }
@@ -311,7 +315,20 @@ a.game-icon svg {fill:$oil; width:rem-calc(30); height:rem-calc(30); position:re
     font-size:rem-calc(35);
 }
 #game-play .panel {padding:1.25rem; }
-#game-play svg.game-elements {}
+.game-elements, .row .drag-target {position:relative; }
+.game-elements .game-item {position:absolute; }
+
+.egg.game-item {left:5%; top:2rem; }
+.egg2.game-item {left: 18%; }
+.water.game-item {left: 38%; top:-3rem; }
+.vanilla.game-item {left:67%; top:1rem; }
+.butter.game-item {left:85%; top:5rem; }
+
+.whisk.game-item {left:65%; top:-1rem; }
+
+.pitcher.game-item {left:65%; top:-1rem; }
+
+.decorate-item {width:23%; }
 
 /* PAUSE GAME */
 .gameMode .close-reveal-modal.button {
@@ -343,6 +360,19 @@ a.game-icon svg {fill:$oil; width:rem-calc(30); height:rem-calc(30); position:re
     .tabs dd > a, .tabs .tab-title > a {padding: 1rem 1rem; }
     .user-ranking {padding: 2rem 0 3rem 1rem; }
     
+    /* GAME MODE */
+    .game-elements .egg, .game-elements .egg2 {width:10%; }
+    .game-elements .water {width:25%; }
+    .game-elements .vanilla {width:15%; }
+    .game-elements .butter {width:20%; }
+    
+    .game-elements .whisk {width:40%; }
+    
+    .game-elements .pitcher {width:40%; }
+    .game-elements .game-waffle {width:40%; }
+    
+    .drag-target {top:6rem; }
+    .drag-target.waffle-decorate {top:3rem; }
 }
 
 // Small (mobile) Sizes and Up
@@ -352,6 +382,20 @@ a.game-icon svg {fill:$oil; width:rem-calc(30); height:rem-calc(30); position:re
     /* GAME MODE */
     #game-play .points, #game-play .time-left {font-size:rem-calc(40); }
     #game-play .panel {padding:1.25rem 1.75rem; }
+    
+    .game-elements .egg, .game-elements .egg2 {width:10%; }
+    .game-elements .water {width:20%; }
+    .game-elements .vanilla {width:12%; }
+    .game-elements .butter {width:20%; }
+    
+    .game-elements .whisk {width:35%; }
+    
+    .game-elements .pitcher {width:35%; }
+    .game-elements .game-waffle {width:60%; }
+    
+    .drag-target {top:10rem; }
+    .drag-target.waffle-iron {top:6rem; }
+    .drag-target.waffle-decorate {top:3rem; }
 }
 
 // Medium (tablet) Sizes and Up
@@ -390,4 +434,7 @@ a.game-icon svg {fill:$oil; width:rem-calc(30); height:rem-calc(30); position:re
 // Large (desktop) Sizes and Up
 @media only screen and (min-width: 40.063em) {
     .tooltip-box .waffle-tooltip {width:rem-calc(50); height:rem-calc(50); }
+    
+    /* GAME MODE */
+    .drag-target {top:12rem; }
 }
