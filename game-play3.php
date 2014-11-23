@@ -1,3 +1,6 @@
+<?php $title = 'Waffle Game: Step 3' ?>
+<?php $description = 'Pour Batter into Pan' ?>
+
 <?php include 'content/game-header.php'; ?>
 
 <div class="main-section">

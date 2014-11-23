@@ -1,3 +1,6 @@
+<?php $title = 'Waffle Game: Step 4' ?>
+<?php $description = 'Choose Your Toppings' ?>
+
 <?php include 'content/game-header.php'; ?>
 
 <div class="main-section">
@@ -59,7 +62,7 @@
             </div>
         </div>
         
-        <!-- Game Start -->
+        <!-- Confirmation -->
         <div id="congrats" class="reveal-modal" data-reveal>
             <div class="singleModal gameMode">
                 <div class="row">
@@ -68,7 +71,7 @@
                     </div>
                 </div>
                  <div class="row padding-right padding-left margin-bottom-2">
-                    <div class="small-12 small-centered small-text-center">
+                    <div class="small-10 small-centered small-text-center medium-8 columns">
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel ligula vehicula, volutpat tortor fermentum, feugiat est!!
                         </p>
@@ -77,7 +80,7 @@
                     </div>
                 </div>
             </div>
-        </div><!--end of Game Start-->
+        </div><!--end of Confirmation-->
         
     </section>
 </div><!--end of main-section-->

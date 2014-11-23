@@ -39,6 +39,7 @@
                     <p><em>This recipe makes 10 to 12 waffles.</em></p>
                     <small>Source: <a href="http://allrecipes.com/recipe/classic-waffles/" class="text-link">AllRecipes.com</a></small>
                 </div>
+            <a href="#" role="button" data-reveal-id="pause-game" data-reveal-ajax="pause-game.php?v=1" title="Pause Game" class="button margin-top">Go Back</a>
         </div>
     </div>
     

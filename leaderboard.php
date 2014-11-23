@@ -17,7 +17,7 @@
                     </div>
                     <div class="user-ranking left">
                         <h2 class="no-margin"><span class="waffle">Rank 1</span></h2>
-                        <p>User Name</p>
+                        <p>Your Name</p>
                     </div>
                 </div>
             </div>

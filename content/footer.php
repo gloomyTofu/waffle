@@ -13,6 +13,7 @@
                 $('.modal-popup').on('click',function(){
                     var modalName = $(this).attr('data-reveal-id');
                     $('.reveal-modal').attr('id', modalName);
+                    $(this).foundation( 'reflow' );
                 });  
             });
         </script>

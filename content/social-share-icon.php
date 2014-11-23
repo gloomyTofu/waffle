@@ -12,14 +12,14 @@
     <div class="singleModal">
         <div class="row">
             <div class="small-5 small-centered text-center columns">
-                <h2><span class="waffle">Share</span></h2>
+                <h2 class="title"><span class="waffle">Share</span></h2>
             </div>
         </div>
         <div class="row">
             <div class="small-12 small-centered text-center columns">
                 <ul class="button-group social-share-buttons">
                     <li>
-                        <a href="#" role="button" aria-label="Facebook" class="button small facebook">
+                        <a href="#" role="button" aria-label="Facebook" data-reveal-id="facebookModal" class="button small facebook">
                             <svg width="30" height="30" viewBox="-1 -2 32 32">
                                 <use xlink:href="images/mini-svg-icons.svg#social_facebook"></use>
                             </svg>
@@ -40,6 +40,27 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+        </div>
+    </div>
+    
+    <a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div id="facebookModal" class="reveal-modal" data-reveal>
+    <div class="singleModal">
+        <div class="row">
+            <div class="small-5 small-centered text-center columns">
+                <h2 class="title"><span class="waffle">Shared</span></h2>
+            </div>
+        </div>  
+        <div class="row padding-right padding-left margin-bottom-2">
+            <div class="small-10 small-centered small-text-center columns">
+                <p>
+                    Nice, you just shared that!
+                </p>
+
+                <a href="#" role="button" class="close-reveal-modal button margin-top">Close</a>
             </div>
         </div>
     </div>

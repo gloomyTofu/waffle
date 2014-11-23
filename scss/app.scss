@@ -228,7 +228,7 @@ svg.icon_heart.svgMini:hover, svg.icon_comment.svgMini:hover, svg.icon_comment.s
 
 /* REVEAL MODAL */
 .reveal-modal {padding:0; }
-.singleModal h2.title, .singleModal h4.title  {margin:3rem 0 2rem; }
+.singleModal h2.title, .singleModal h3.title, .singleModal h4.title  {margin:3rem 0 2rem; }
 .singleModal .buttons-row {padding:0 1rem;}
 .singleModal .buttons-row .user-title {position:absolute; top:1rem;}
 .singleModal svg.placeholder {height:25rem; }
@@ -349,7 +349,7 @@ li.bacon.decorate-item {width:25%; }
 .singleModal form {margin:1rem 0; }
 
 /* PAUSE GAME */
-.gameMode .close-reveal-modal.button {
+.singleModal .close-reveal-modal.button {
     font-size:1rem;
     line-height:normal;
     position:relative;

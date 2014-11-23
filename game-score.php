@@ -3,17 +3,17 @@
     <div class="singleModal gameMode">
         <div class="row">
             <div class="small-12 small-centered text-center columns">
-                <h4 class="title"><span class="waffle">SCORE</span></h4>
-                <h2><span class="waffle">4000 PTS</span></h2>
+                <h3 class="title"><span class="waffle">SCORE</span></h3>
+                <h1><span class="waffle">4000 PTS</span></h1>
             </div>
         </div>
         <div class="row">
-            <div class="small-6 small-centered columns text-center">
+            <div class="small-12 small-centered columns text-center">
                 Accuracy: 99% | Best Time: 00:30
             </div>
         </div>
         <div class="row">
-            <div class="small-12 small-centered columns small-text-center margin-bottom-2">
+            <div class="small-10 small-centered columns small-text-center margin-bottom-2">
                 <p><br/>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel ligula vehicula, volutpat tortor fermentum, feugiat est.
                 </p>

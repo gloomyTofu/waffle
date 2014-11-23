@@ -1,3 +1,6 @@
+<?php $title = 'Waffle Game: Complete' ?>
+<?php $description = "nice work!" ?>
+
 <?php include 'content/game-header.php'; ?>
 
 <div class="main-section">
@@ -107,7 +110,7 @@
                           <div class="row">
                             <div class="small-12 columns text-left">
                               <label>Name
-                                <input type="text" placeholder="Name to use in gallery section" />
+                                <input type="text" placeholder="Alias to use in public gallery" />
                               </label>
                             </div>
                           </div>
@@ -119,14 +122,33 @@
                             </div>
                           </div>
                         </form>
-                        <a href="gallery.php?v=1" role="button" class="button margin-top right">Submit</a>
+                        <a href="#" role="button" data-reveal-id="gallery-confirm" class="button margin-top right">Submit</a>
                     </div>
                 </div>
-                
                 
             </div>    
           <a class="close-reveal-modal">&#215;</a>
         </div>
+        
+         <!-- Confirmation -->
+        <div id="gallery-confirm" class="reveal-modal" data-reveal>
+            <div class="singleModal gameMode">
+                <div class="row">
+                    <div class="small-12 small-centered text-center columns">
+                        <h2 class="title"><span class="waffle">Added</span></h2>
+                    </div>
+                </div>
+                 <div class="row padding-right padding-left margin-bottom-2">
+                    <div class="small-10 small-centered small-text-center medium-8 columns">
+                        <p>
+                            Great! Your Masterpiece has been added to the Gallery Section!
+                        </p>
+
+                        <a href="gallery.php?v=1" role="button" class="button margin-top">View Gallery</a>
+                    </div>
+                </div>
+            </div>
+        </div><!--end of Confirmation-->
         
     </section>
 </div><!--end of main-section-->

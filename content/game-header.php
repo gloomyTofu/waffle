@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="apple-mobile-web-app-capable" content="yes">
         <!--<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">-->
-        <title>Waffle Style Game</title>
+        <title><?php echo htmlspecialchars($title) ?></title>
         <link rel="stylesheet" href="stylesheets/app.css" />
         <link href='http://fonts.googleapis.com/css?family=Corben:400,700,300|Quicksand' rel='stylesheet' type='text/css'>
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -21,12 +21,20 @@
                         <use xlink:href="images/mini-svg-icons.svg#icon_pause"></use>
                     </svg>&nbsp;<span>Pause</span></a>
             </section>
-            <section class="right" role="navigation"> 
+            <!--<section class="right" role="navigation"> 
                 <a href="#" role="button" class="small game-icon"><span>Done </span>
                     <svg viewBox="5 1 32 32">
                         <use xlink:href="images/mini-svg-icons.svg#arrow_carrot-right"></use>
                     </svg>
                 </a>
+            </section>-->
+            <section class="right padding-right">
+                <h5><span class="waffle text-lowercase">
+                    <svg width="25" height="23" viewBox="-7 -6 30 30">
+                        <use xlink:href="images/mini-svg-icons.svg#arrow_carrot-right"></use>
+                    </svg>    
+                    <?php echo htmlspecialchars($description) ?></span>
+                </h5>
             </section>
         </nav>
                

@@ -45,6 +45,7 @@ $(function(){
         $('.reveal-modal-bg, .reveal-modal.open').fadeOut(2000, function(){
             $('.reveal-modal-bg').hide();
             $('.reveal-modal.open').remove();
+            
         });
     };
 });
