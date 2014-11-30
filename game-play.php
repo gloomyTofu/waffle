@@ -1,13 +1,12 @@
-<?php $title = 'Waffle Game: Step 1' ?>
-<?php $description = 'Drag Ingredients to Bowl' ?>
-
-<?php include 'content/game-header.php'; ?>
+<?php $pagetitle = 'Game: Step 1'; ?>
+<?php $points = '0'; ?>
+<?php include 'content/header.php'; ?>
 
 <div class="main-section">
-    <section class="main-content" id="game-play">
+    <section class="main-content game-play">
         <div class="row">
             <div class="game-elements">
-                <a href="" class="modal-popup" data-reveal-id="game-intro2" data-reveal-ajax="game-intro2.php?v=1" title="Next Stage" >
+                <a href="game-intro2.php?v=1" title="Next Stage" >
                     <div class="egg game-item">
                         <svg viewBox="0 0 127 168">
                             <use xlink:href="images/game-element.svg#egg"></use>
@@ -38,24 +37,17 @@
         </div>
         <div class="row">
             <div class="drag-target small-12 medium-9 large-8 small-centered columns">      
-                <a href="" class="modal-popup" data-reveal-id="game-intro2" data-reveal-ajax="game-intro2.php?v=1" title="Next Stage" >
+                <a href="game-intro2.php?v=1" title="Next Stage" >
                     <svg class="bowl" viewBox="0 0 530 800">
                         <use xlink:href="images/game-element.svg#bowl"></use>
                     </svg>
                 </a>
             </div>
         </div>
-        <div class="fixed-bottom position-right">
-            <div class="points-counter panel text-center left">
-                    <label><span class="waffle">Points</span></label>
-                    <div class="points"><span class="waffle">1,000</span></div>
-            </div>
 
-            <div class="countdown-timer panel text-center right">
-                    <label><span class="waffle">Timer</span></label>
-                    <div class="time-left"><span class="waffle">00:00</span></div>
-            </div>
-        </div>
+        <?php include 'content/pause-game.php'; ?>
+        <?php include 'content/game-points.php'; ?>
+
     </section>
 </div><!--end of main-section-->
 

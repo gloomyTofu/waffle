@@ -1,10 +1,10 @@
 <?php include 'content/header.php'; ?>
 
 <div class="main-section">
-    <section class="main-content" id="game-intro">
+    <section class="main-content">
         
-        <!-- Game Intro 2 -->
-        <div id="game-intro2">
+        <!-- Game Intro 6 -->
+        <div id="game-intro6">
             <div class="singleModal gameMode">
                 <div class="row">
                     <div class="small-3 small-offset-9 medium-2 medium-offset-10 columns">
@@ -17,7 +17,7 @@
                 </div>
                 <div class="row">
                     <div class="small-12 small-centered small-text-center medium-text-left padding-left-2 columns">
-                        <h2 class="title"><span class="waffle">Step 2: Mix</span></h2>
+                        <h2 class="title"><span class="waffle">Step 6: Decorate</span></h2>
                     </div>
                 </div>
                  <div class="row padding-right padding-left margin-bottom-2">
@@ -28,16 +28,15 @@
                     <div class="small-12 small-centered medium-7 medium-uncentered columns small-text-center medium-text-left">
                         <h5><span class="waffle">Directions</span></h5>
                         <p>
-                            Add remaining wet ingredients and whisk until batter has a uniform (not lumpy) consistency.
+                            Choose your waffle toppings.
                         </p>
-                        <p>Drag remaining ingredients to the bowl, then use your finger to mix all the ingredients together in a circular motion.</p>
+                        <p>Use your finger to drag and drop toppings onto your waffle. Use the rotate button to turn the ingredient clockwise and the remove button to remove a topping choice.</p>
 
-                        <a href="game-play2.php?v=1" role="button" class="pageLink button start_level margin-top">Start Level</a>
+                        <a href="game-play6.php?v=1" role="button" class="pageLink button margin-top">Start Level</a>
                     </div>
                 </div>
             </div>
         </div><!--end of Game Start-->
-
     </section>
 </div><!--end of main-section-->
 

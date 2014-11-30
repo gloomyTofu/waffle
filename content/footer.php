@@ -8,14 +8,18 @@
             $(document).foundation();
             
             $(document).ready(function(){
-                $('.custom-menu-icon').click(function(){false});
+                /*$('.custom-menu-icon').click(function(){false});
         
                 $('.modal-popup').on('click',function(){
                     var modalName = $(this).attr('data-reveal-id');
                     $('.reveal-modal').attr('id', modalName);
                     $(this).foundation( 'reflow' );
-                });  
+                }); */
             });
+            
+            function goBack() {
+                window.history.back()
+            }
         </script>
 
     </body>
