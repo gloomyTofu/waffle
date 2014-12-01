@@ -32,7 +32,7 @@
                         </a>
                     </section>
                     <section class="right" role="navigation"> 
-                        <a href="#" class="item custom-menu-icon modal-popup" data-reveal-id="cookbook" data-reveal-ajax="cookbook.php?v=1" title="My Recipes">
+                        <a href="cookbook.php?v=1" class="item custom-menu-icon" title="My Recipes">
                             <svg class="svgIcon" viewBox="0 0 30 25"><use xlink:href="images/svgicons.svg#book"></use></svg>
                         </a>
                         <a class="item right-off-canvas-toggle custom-menu-icon" title="Account" href="#">

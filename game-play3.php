@@ -23,7 +23,6 @@
             </div>
         </div>
         
-        <?php include 'content/pause-game.php'; ?>
         <?php include 'content/game-points.php'; ?>
     </section>
 </div><!--end of main-section-->

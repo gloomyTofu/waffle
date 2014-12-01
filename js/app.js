@@ -16,7 +16,7 @@ $(document).ready(function(){
     
     $('.social-share-icon').click(function(){
         $('.social-share-icon a.share-button').hide();
-        $('.reveal-share-buttons').show('slow');
+        $('.reveal-share-buttons').show('fast');
     });
 });
                   

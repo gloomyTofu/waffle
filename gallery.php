@@ -516,7 +516,7 @@
                         </a>
                     </div>
                     <div class="small-2 columns text-center">
-                        <a class="item custom-button share-button" href="#">
+                        <a class="item custom-button share-button" href="share-confirm.php?v=1">
                             <svg class="social_share svgMini" viewBox="-3 -5 38 38"><use xlink:href="images/mini-svg-icons.svg#social_share"></use></svg> <small>Share</small>
                         </a>
                     </div>

@@ -23,25 +23,22 @@
                     <div class="medium-5 large-4 columns border-right">
                             <h5><span class="waffle">Ingredients</span></h5>
                             <ul>
-                                <li>2 cups all-purpose flour</li>
-                                <li>1 teaspoon salt</li>
-                                <li>4 teaspoons baking powder</li>
-                                <li>2 tablespoons white sugar</li>
+                                <li>2 cups flour</li>
+                                <li>1 1/4 cups milk</li>
+                                <li>3/4 stick butter, melted</li>
                                 <li>2 eggs</li>
-                                <li>1 1/2 cups warm milk</li>
-                                <li>1/3 cup butter, melted</li>
-                                <li>1 teaspoon vanilla extract</li>
+                                <li>2 tbsp sugar</li>
+                                <li>1/4 tsp salt</li>
                             </ul>
                         </div>
                         <div class="medium-7 large-offset-1 columns border-right last">
                             <h5><span class="waffle">Directions</span></h5>
                             <ol>
-                                <li>In a large bowl, mix together flour, salt, baking powder and sugar; set aside. Preheat waffle iron to desired temperature.</li>
-                                <li>In a separate bowl, beat the eggs. Stir in the milk, butter and vanilla. Pour the milk mixture into the flour mixture; beat until blended.</li>
-                                <li>Ladle the batter into a preheated waffle iron. Cook the waffles until golden and crisp. Serve immediately.</li>
-                            </ol>
-                            <p><em>This recipe makes 10 to 12 waffles.</em></p>
-                            <small>Source: <a href="http://allrecipes.com/recipe/classic-waffles/" class="text-link">AllRecipes.com</a></small>
+                        <li>Mix dry ingredients together (flour, salt, sugar). Add remaining wet ingredients, except for the egg whites, and whisk until batter has a uniform (not lumpy) consistency.</li>
+                        <li>Whisk the egg whites until stiff peaks form. Gently fold in whipped egg whites into batter.</li>
+                        <li>Pour batter into a preheated waffle iron. Cook the waffles until golden and crisp. Serve immediately.</li>
+                    </ol>
+                    <small>Source: <a href="http://www.pieiron.com" class="text-link">Pie Iron</a></small>
                         </div>
                 </div>
             </div>

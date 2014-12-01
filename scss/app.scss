@@ -40,26 +40,27 @@
 //   "foundation/components/visibility";
 
 $uppercase-text-transform:uppercase;
-$waffle-menu-icon-color:$jet;
-$waffle-grey:#dcdcdc;
-$waffle-light-grey:#efefef;
+$waffle-menu-icon-color:$oil;
+$waffle-grey:$aluminum;
+$waffle-light-grey:#e8e8e8;
 $font-weight-light: 300;
 
 //Touch Scrolling <http://css-tricks.com/snippets/css/momentum-scrolling-on-ios-overflow-elements/>
 .touch { -webkit-overflow-scrolling: touch; }
 a svg, a.button, a.pageLink, .modal-popup, .custom-menu-icon, h3.recipe-tab, a.tooltip-box, #directory a {cursor:pointer; }
-#directory a, #gallery a, a.custom-button.share-button {display:block; }
+#directory a, #gallery a, a.custom-button.share-button, a.block {display:block; }
 
 a.button:hover, a.button:focus, a.button:active {background:$steel; }
 p.smallTxt {font-size:90%; }
 a.text-link {text-decoration:underline; }
-span.waffle {text-transform:uppercase; font-family:$font-family-waffle; letter-spacing: 0.15rem; }
+span.waffle {text-transform:uppercase; font-family:$font-family-waffle; line-height:1rem; letter-spacing: 0.15rem; }
 
 ul.list-style-position-inside li {list-style-position:inside; }
 
 /* TEXT */
 .text-lowercase {text-transform:lowercase !important; }
 .small-text-center {text-align:center !important; }
+.text-larger {font-size:1.25rem; }
 
 /* POSITION */
 .fixed-bottom {position:fixed !important; bottom:0 !important; }
@@ -75,7 +76,10 @@ h2.no-margin {margin-bottom:0 !important; }
 .margin-bottom {margin-bottom:1rem !important; }
 .margin-right {margin-right:1rem !important; }
 
+.margin-right-2 {margin-right:2rem !important; }
 .margin-bottom-2 {margin-bottom:2rem !important; }
+
+.margin-auto {margin:0 auto !important; }
 
 .no-padding {padding:0 !important; }
 .no-padding-right {padding-right:0 !important; }
@@ -163,7 +167,7 @@ nav .svgIcon:hover, .title .svgIcon:hover, nav .svgIcon:focus, .title .svgIcon:f
 .left-off-canvas-menu ul.off-canvas-list li a {
     padding-bottom: 0.75rem; 
     font-weight:$font-weight-light; 
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(232, 232, 232, 0.75);
  }
 .item .menu-icon {
     width:rem-calc(20);
@@ -180,6 +184,9 @@ svg.svgMini, svg.social_share {
 svg.svgMini:hover, svg.svgMini:focus, svg.svgMini:active, svg.social_share:hover, svg.social_share:focus, svg.social_share:active  {
     fill:$waffle-grey;
 }
+
+.fixed-bottom.icon_pause {top:75%; }
+
 .recipe-tab svg {position:absolute; top:0.15rem; left:7.25rem; }
 .recipe-tab.toppings svg {top:0.25rem; left:9.75rem; }
 .profile-image {width:8rem; }
@@ -188,10 +195,10 @@ svg.svgMini:hover, svg.svgMini:focus, svg.svgMini:active, svg.social_share:hover
 .social-share-icon {
     width:2rem;
     height:2rem;
+    float:right;
+    position:relative;
 }
-.return-home-icon {
-    
-}
+.reveal-share-buttons {display:none; position:absolute; right:0; }
 
 a.custom-button.share-button small {position:relative; top:-0.25rem; }
 a.custom-button.share-button:hover, a.custom-button.share-button:focus, a.custom-button.share-button:active {color:$waffle-grey; -webkit-tap-highlight-color: rgba(0,0,0,0); }
@@ -248,8 +255,6 @@ ul.social-share-buttons svg {fill:#fff; }
 .social-share-buttons .button.small {padding:0.875rem 1.25rem; }
 .social-share-buttons .button.tiny {padding:0.625rem 1rem; }
 
-.reveal-share-buttons {display:none; }
-
 ul.social-share-buttons a.facebook {background-color:#3B5998; }
 ul.social-share-buttons a.twitter {background-color:#55ACEE; }
 ul.social-share-buttons a.email {background-color:#fa694b; }
@@ -270,7 +275,7 @@ ul.social-share-buttons a.email:hover, ul.social-share-buttons a.email:focus {ba
 
 /* WAFFLE INFO */
 svg.waffle-detail-img {width:100%; position:relative; }
-.waffle-detail.columns {background-color:$waffle-light-grey; padding-top:2rem; padding-bottom:1rem; }
+.waffle-detail.columns {background-color:rgba(232, 232, 232, 0.5); padding-top:2rem; padding-bottom:1rem; }
 .waffle-detail a.button {width:12rem; }
 .waffle-detail p {}
 a.tooltip-box {position:absolute; }
@@ -323,7 +328,7 @@ a.game-icon svg {fill:$oil; width:rem-calc(30); height:rem-calc(30); position:re
 .game-play .points, .game-play .time-left {
     font-size:rem-calc(35);
 }
-.game-play .panel {padding:1.25rem; }
+.game-play .panel {padding:1.25rem; border-color:rgba(153, 153, 153, 0.75); background:rgba(232, 232, 232, 0.75);}
 .game-elements, .row .drag-target {position:relative; }
 .game-elements .game-item {position:absolute; }
 
@@ -351,6 +356,8 @@ li.bacon.decorate-item {width:25%; }
     padding-left: 1.25rem;
     padding-right: 1.25rem;
 }
+
+.icon_refresh svg, .icon_delete svg {width:40px; height:40px; }
 
 /* ADD TO GALLERY */
 .singleModal .game-elements {width:16rem; height:16rem; margin: 0 auto;  }
@@ -466,7 +473,10 @@ li.bacon.decorate-item {width:25%; }
 // Large (desktop) Sizes and Up
 @media only screen and (min-width: 40.063em) {
     .tooltip-box .waffle-tooltip {width:rem-calc(50); height:rem-calc(50); }
+    .recipe-slider.fixed-bottom.row {max-width: initial; }
+    
     
     /* GAME MODE */
     .drag-target {top:12rem; }
+    
 }

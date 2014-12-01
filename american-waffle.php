@@ -3,7 +3,7 @@
 <div class="main-section">
     <section class="main-content" id="american-waffle"> 
         <div class="row">
-            <div class="medium-7 text-center columns">
+            <div class="medium-7 large-8 text-center columns">
                 <svg class="waffle-detail-img" viewBox="0 0 200 200">
                     <use xlink:href="images/wafflesvg.svg#waffle-svg"></use>
                 </svg>
@@ -20,12 +20,12 @@
                 </svg>
                 </a>
             </div>
-            <div class="waffle-detail medium-4 medium-offset-1 text-center columns">
+            <div class="waffle-detail medium-5 large-4 text-center columns">
                 <div class="padding">
                     <h3><span class="waffle">American Waffle</span></h3>
                     <div class="button-group">
                         <a href="game-intro.php?v=1" class="pageLink button" title="Play Game" role="button">Play Game</a>
-                        <a href="#" class="modal-popup button" data-reveal-id="game-intro4" data-reveal-ajax="game-intro4.php?v=1" title="Decorate Waffle" role="button">Decorate</a>
+                        <a href="use-points.php?v=1" class="pageLink button" title="Decorate Waffle" role="button">Decorate</a>
                     </div>
 
                     <section class="text-left">

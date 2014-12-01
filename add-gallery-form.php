@@ -41,16 +41,16 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="small-12 columns">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel ligula vehicula, volutpat tortor fermentum, feugiat est.
-                            </p>
-                            </div>
-                        </div>
                     </div>
                     <div class="small-12 small-centered medium-6 medium-uncentered large-5 end columns medium-text-left">
                         <form>
+                            <div class="row">
+                            <div class="small-12 columns">
+                            <p>
+                                Add your work of art ot the gallery section so other users can like, comment, and share your design with the online world. 
+                            </p>
+                            </div>
+                        </div>
                           <div class="row">
                             <div class="small-12 columns text-left">
                               <label>Name

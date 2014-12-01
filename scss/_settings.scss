@@ -130,20 +130,12 @@ $font-weight-bold: 700;
 // $info-color: #a0d3e8;
 
 // Waffle Colors
-// $primary-color: #814F78;
-// $secondary-color: #e7e7e7;
-// $alert-color: #A6D1B5;
-// $success-color: #fa694b;
-// $warning-color: #F9F8E0;
-// $info-color: #E2CBB2;
-
-// Wireframe Colors
-$primary-color: $black;
-$secondary-color: $oil;
-$alert-color: $steel;
-$success-color: $aluminum;
-$warning-color: $iron;
-$info-color: $base;
+$primary-color: $oil;
+$secondary-color: $aluminum;
+$alert-color: #F5755B;
+$success-color: #A6D1B5;
+$warning-color: #E2CBB2;
+$info-color: #E8E8E8;
 
 // We use these to control various global styles
 // $body-bg: $white;
@@ -1394,6 +1386,11 @@ $off-canvas-overlay-background-hover: rgba($white, 0.1);
 // $tooltip-rounded: $global-rounded;
 // $tooltip-pip-size: 5px;
 // $tooltip-max-width: 300px;
+
+$tooltip-padding: 1rem;
+$tooltip-bg: #A6D1B5;
+$tooltip-font-color: $oil;
+$tooltip-font-size: rem-calc(20);
 
 // 34. Top Bar
 // - - - - - - - - - - - - - - - - - - - - - - - - -

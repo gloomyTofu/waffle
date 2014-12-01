@@ -24,7 +24,7 @@
         <div class="tabs-content">
             <section role="tabpanel" aria-hidden="false" class="content active" id="leaderboard-panel">
                 <div class="row border-bottom">
-                    <div class="small-12 medium-10 large-6 small-centered columns">
+                    <div class="small-12 medium-6 large-5 small-centered columns">
                         <div class="profile-image left">
                             <svg class="placeholder-circle" viewBox="0 0 200 200"
         perserveAspectRatio="xMinYMid">
@@ -106,7 +106,7 @@
                     <div class="medium-6 columns border-right">
                         <ul class="circle-icon-list">
                             <li>
-                                <a href="#" class="item">
+                                <a href="badge.php?v=1" class="item block pageLink">
                                     <svg class="placeholder-circle left"><circle cx="50" cy="50" r="40" /></svg> <span>Lorem ipsum dolor</span></a>  
                             </li>
                             <li>

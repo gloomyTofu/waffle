@@ -10,7 +10,7 @@
 
 <div class="reveal-share-buttons" >
         <div class="row">
-            <div class="small-12 small-centered columns no-padding">
+            <div class="small-12 columns no-padding">
                 <ul class="button-group social-share-buttons">
                     <li>
                         <a href="share-confirm.php?v=1" role="button" class="button tiny">
